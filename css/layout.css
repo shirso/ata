@@ -1,0 +1,198 @@
+@charset "utf-8";
+/* CSS Document */
+@media only screen and (max-width: 239px) {
+.grey input[type="text"], .grey input[type="email"], .grey input[type="tel"], .blank-white input[type="text"], .blank-white input[type="email"], .blank-white input[type="tel"]{ width:90%;}
+.grey textarea, .blank-white textarea{ width:90%;}
+.blank-white select, .grey select{ width:70%;}
+}
+@media only screen and (min-width: 240px) and (max-width: 319px) {
+.serving-area ul li{ text-align:center;}
+.serving-area ul li .img-responsive{ display:inline-block;}
+.serving-area ul li .alignleft{ float:none;}
+.serving-area ul li span{ display:inherit;}
+.whatwedo-area ul{ border-bottom:1px solid #CCC;}
+.gallery-area ul li{ margin-right:10px; margin-bottom:10px; width:44%;}
+.gallery-area ul li:nth-child(2n+2){ margin-right:0;}
+.gallery-area ul li:nth-child(5n+5){ margin-right:10px;}
+.side-table ul li span{ margin-left:0px;}
+.grey input[type="text"], .grey input[type="email"], .grey input[type="tel"], .blank-white input[type="text"], .blank-white input[type="email"], .blank-white input[type="tel"]{ width:90%;}
+.grey textarea, .blank-white textarea{ width:90%;}
+.blank-white select, .grey select{ width:65%;}
+.im-div{ margin-bottom:20px;}
+.caption-area h1{ font-size:16px;}
+.caption-area{ top:30%;}
+.serving-area ul li, .customer-area ul li{ width:100%; text-align:left; padding-left:20px;}
+.serving-area ul li, .serving-area ul li a, .customer-area ul li{ font-size:22px;}
+.serving-area ul li .alignleft, .customer-area ul li .alignleft{ float:none;}
+.serving-area ul li span, .customer-area ul li span{ display:block;}
+.footer-area ul li:nth-child(2){background:none !important;}
+.footer-area ul li:nth-child(5){background:none !important;}
+.footer-area ul li:nth-child(4){background:none !important;}
+.call-us h3{font-size:18px; margin-right:0px;}
+.call-us h2{font-size:18px;}
+}
+@media only screen and (min-width: 320px) and (max-width: 449px) {
+.serving-area ul li, .serving-area ul li a{ font-size:25px;}
+.whatwedo-area ul{ border-bottom:1px solid #CCC;}
+.gallery-area ul li{ margin-right:10px; margin-bottom:10px; width:29%;}
+.gallery-area ul li:nth-child(3n+3){ margin-right:0;}
+.gallery-area ul li:nth-child(5n+5){ margin-right:10px;}
+.side-table ul li{ text-align:center;}
+.side-table ul li span{ margin-left:50px;}
+.grey input[type="text"], .grey input[type="email"], .grey input[type="tel"], .blank-white input[type="text"], .blank-white input[type="email"], .blank-white input[type="tel"]{ width:85%;}
+.grey textarea, .blank-white textarea{ width:85%;}
+.blank-white select, .grey select{ width:60%;}
+.im-div{ width:26%;}
+.partner-con .im-div, .blog-con .im-div{ width:100%; margin-bottom:20px;}
+.blog-con .readmore{ text-align:left; margin-top:0;}
+.caption-area h1{ font-size:22px;}
+.caption-area{ top:30%;}
+.serving-area ul li, .customer-area ul li{ width:100%; text-align:left; padding-left:20px;}
+.serving-area ul li, .serving-area ul li a, .customer-area ul li{ font-size:22px;}
+.footer-area ul li:nth-child(2){background:none !important;}
+.footer-area ul li:nth-child(5){background:none !important;}
+}
+@media only screen and (min-width: 450px) and (max-width: 479px) {
+.whatwedo-area ul{ border-bottom:1px solid #CCC;}
+.gallery-area ul li{ margin-right:10px; margin-bottom:10px; width:22.3%;}
+.gallery-area ul li:nth-child(4n+4){ margin-right:0;}
+.gallery-area ul li:nth-child(5n+5){ margin-right:10px;}
+.side-table ul li{ text-align:center;}
+.grey input[type="text"], .grey input[type="email"], .grey input[type="tel"], .blank-white input[type="text"], .blank-white input[type="email"], .blank-white input[type="tel"]{ width:50%;}
+.grey textarea, .blank-white textarea{ width:50%;}
+.blank-white select, .grey select{ width:40%;}
+.im-div{ width:28%;}
+.partner-con .im-div, .blog-con .im-div{ width:100%; margin-bottom:20px;}
+.caption-area h1{ font-size:30px;}
+.caption-area{ top:30%;}
+.serving-area ul li, .customer-area ul li{ width:49%; text-align:left;  float:left;padding-left:20px;}
+.serving-area ul li, .serving-area ul li a, .customer-area ul li{ font-size:22px; }
+.serving-area ul li .alignleft, .customer-area ul li .alignleft{ float:none;}
+.footer-area ul li:nth-child(4){background:none !important;}
+}
+@media only screen and (min-width: 480px) and (max-width: 567px) {
+.whatwedo-area ul{ border-bottom:1px solid #CCC;}
+.gallery-area ul li{ margin-right:10px; margin-bottom:10px; width:22.3%;}
+.gallery-area ul li:nth-child(4n+4){ margin-right:0;}
+.gallery-area ul li:nth-child(5n+5){ margin-right:10px;}
+.side-table ul li{ text-align:center;}
+.grey input[type="text"], .grey input[type="email"], .grey input[type="tel"], .blank-white input[type="text"], .blank-white input[type="email"], .blank-white input[type="tel"]{ width:60%;}
+.grey textarea, .blank-white textarea{ width:60%;}
+.blank-white select, .grey select{ width:47%;}
+.im-div{ width:33%;}
+.partner-con .im-div, .blog-con .im-div{ width:100%; margin-bottom:20px;}
+.caption-area h1{ font-size:30px;}
+.caption-area{ top:30%;}
+.serving-area ul li, .customer-area ul li{ width:49%; text-align:left;float:left; padding-left:20px;}
+.serving-area ul li, .serving-area ul li a, .customer-area ul li{ font-size:22px;}
+.serving-area ul li .alignleft, .customer-area ul li .alignleft{ float:none;}
+.footer-area ul li:nth-child(5){background:none !important;}
+}
+@media only screen and (min-width: 568px) and (max-width: 684px) {
+.serving-area ul li{ display: inline-block; padding:0 15px;} 
+.serving-area ul li, .serving-area ul li a{ font-size:22px;}
+.serving-area ul{ border-bottom:1px solid #CCC;}
+.whatwedo-area ul{ border-bottom:1px solid #CCC;}
+.gallery-area ul li{ width:20.5%;}
+.gallery-area ul li:nth-child(4n+4){ margin-right:0;}
+.gallery-area ul li:nth-child(5n+5){ margin-right:20px;}
+.side-table ul li{ text-align:center;}
+.grey input[type="text"], .grey input[type="email"], .grey input[type="tel"], .blank-white input[type="text"], .blank-white input[type="email"], .blank-white input[type="tel"]{ width:55%;}
+.grey textarea, .blank-white textarea{ width:55%;}
+.blank-white select, .grey select{ width:37%;}
+.im-div{ width:35%;}
+.partner-con .im-div, .blog-con .im-div{ width:100%; margin-bottom:20px;}
+.caption-area h1{ font-size:36px;}
+.caption-area{ top:30%;}
+.serving-area ul li, .customer-area ul li{ width:49%; text-align:left;float:left; padding-left:20px;}
+.serving-area ul li .alignleft, .customer-area ul li .alignleft{ float:none;}
+.footer-area ul li:nth-child(5){background:none !important;}
+}
+@media only screen and (min-width: 685px) and (max-width: 767px) {
+.serving-area ul li{ display: inline-block; padding:0 15px;}
+.serving-area ul{ border-bottom:1px solid #CCC;}
+.whatwedo-area ul{ border-bottom:1px solid #CCC;} 
+.gallery-area ul li{ margin:0 9px 9px 0}
+.side-table ul li{ text-align:center;}
+.grey input[type="text"], .grey input[type="email"], .grey input[type="tel"], .blank-white input[type="text"], .blank-white input[type="email"], .blank-white input[type="tel"]{ width:50%;}
+.blank-white select, .grey select{ width:37%;}
+.grey textarea, .blank-white textarea{ width:50%;}
+.partner-con .im-div, .blog-con .im-div{ width:100%; margin-bottom:20px;}
+.caption-area h1{ font-size:30px;}
+.caption-area{ top:30%;}
+.serving-area ul li, .customer-area ul li{ width:48%; text-align:left;float:left; padding-left:20px;}
+.current_page_item{border-bottom:1px solid #FFF;}
+}
+@media only screen and (min-width: 768px) and (max-width: 849px) {
+#menu-area .navbar-default .navbar-nav > li > a{padding: 10px 6px; font-size:13px;}
+#menu-area .dropdown-menu > li > a{font-size:13px;}
+.serving-area ul li{ text-align:center;}
+.serving-area ul li .img-responsive{ display:inline-block;}
+.serving-area ul li .alignleft{ float:none;}
+.serving-area ul li span{ display:inherit;}
+.gallery-area ul li{ margin:0 11px 11px 0}
+.side-table ul li span{ margin-left:0;}
+.grey input[type="text"], .grey input[type="email"], .grey input[type="tel"], .blank-white input[type="text"], .blank-white input[type="email"], .blank-white input[type="tel"]{ width:45%;}
+.sidebar-area .resent-con ul{padding-left:30px;}
+.caption-area{ top:30%;}
+.our-customer {margin: 30px 0;}
+.serving-area ul li, .customer-area ul li{ width:48%; text-align:left; float:left; padding-left:20px;}
+.call-us h3{font-size:25px; margin-right:30px;}
+.call-us h2{font-size:23px;}
+
+} 
+@media only screen and (min-width: 850px) and (max-width: 991px) {
+#menu-area .navbar-default .navbar-nav > li > a{padding: 10px 6px; font-size:13px;}
+#menu-area .dropdown-menu > li > a{font-size:13px;}
+.serving-area ul li{ text-align:center;}
+.serving-area ul li .img-responsive{ display:inline-block;}
+.serving-area ul li .alignleft{ float:none;}
+.serving-area ul li span{ display:inherit;}
+.gallery-area ul li{ margin:0 11px 11px 0}
+.side-table ul li span{ margin-left:0;}
+.sidebar-area .resent-con ul{padding-left:30px;}
+.our-customer {margin: 30px 0;}
+.serving-area ul li, .customer-area ul li{ width:48%; text-align:left;}
+.call-us h3{font-size:25px; margin-right:30px;}
+.call-us h2{font-size:23px;}
+.caption-area{top:34% !important;}
+} 
+@media only screen and (min-width: 992px) and (max-width: 1099px) {
+#menu-area .navbar-default .navbar-nav > li > a {padding: 10px 6px;}
+.serving-area ul li, .serving-area ul li a{ font-size:25px;}
+.gallery-area ul li{ margin:0 15px 15px 0}
+.side-table ul li span{ margin-left:57px;}
+.our-customer {margin: 30px 110px;}
+.serving-area ul li, .customer-area ul li{ width:33%;}
+}
+@media only screen and (min-width: 1100px) and (max-width: 1199px) {
+#menu-area .navbar-default .navbar-nav > li > a {padding: 10px 6px;}
+.serving-area ul li, .serving-area ul li a{ font-size:25px;}
+.gallery-area ul li{ margin:0 15px 15px 0}
+.side-table ul li span{ margin-left:50px;}
+.our-customer {margin: 30px 110px;}
+.serving-area ul li, .customer-area ul li{ width:33%;}
+}
+@media screen and (max-width:767px) {
+#menu-area{ float:none;}
+.logo-area{ text-align:center;}
+.logo-area .img-responsive{ display:inline-block;}
+.call-us{ text-align:center; margin:20px 0;}
+#menu-area .navbar-header{ text-align:center;}
+#menu-area .navbar-toggle{ float:none; margin-right:0;}
+#menu-area .dropdown-menu{ padding-left:20px;}
+.welcome-area .container{ padding:0 40px;}
+.footer-area ul li{ margin-bottom:20px;}
+.sidebar-area{ margin-top:30px;}
+.team{ margin-top:30px;}
+.inner-left {padding-right:0px;}
+.our-customer {margin: 30px 0;}
+.call-us h3{font-size:20px; margin-right:0px;}
+.call-us h2{font-size:20px;}
+#menu-area .current_page_item > a{border-bottom:1px solid #FFF;}
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+}
+@media only screen and (min-width: 1300px){
+    .banner-area img{width: 100%;}
+}

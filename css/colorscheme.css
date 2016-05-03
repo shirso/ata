@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+::selection{color:#eaeaea;background:#333333;}
+::-moz-selection{color:#eaeaea;background:#333333;}
+body{color:#000000;background-color:#ffffff;}
+h1, h5{color:#ffffff;}
+h2{ color:#404142;}
+h3{color:#404142;}
+h4{ color:#ebf0ff;}
+h5{ color:#404142;}
+h6{ color:#e88383;}
+p{ color:#474747;}
+i{ color:#a2a4a5;}
+a {-webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease;}
+a, p a{color:#4a99d7;}
+a:hover{color:#e88383;}
+p span{ color:#e88383;}
+hr{color:border-color:#6e6e6e;}
+h5 a{color:#404142;}
+/************************ Warning Box open *****************************/
+.warning-box{background-color:#333333;}
+.warning-box h1{color:#ff1515;}
+/************************ Warning Box Close *****************************/
+/*----- Hearder -----*/
+#menu-area .navbar-default .navbar-nav>li>a{color:#717478;background-color: transparent;}
+.current_page_item { background:#e88383;}
+#menu-area .current_page_item > a{ color:#fff !important;}
+#menu-area .dropdown-menu{ background:#e88383;}
+#menu-area .dropdown-menu>li>a{ color:#fff;}
+/*----- Hearder -----*/
+/*----- Welcome -----*/
+.welcome-area h2{ color:#e88383;}
+/*----- Welcome -----*/
+/*----- Work Area -----*/
+.work-area h2{ color:#ebf0ff;}
+.work-area-in p{color:#ebf0ff;}
+/*----- Work Area -----*/
+/*----- What We Do Area -----*/
+.whatwedo-area h2{ color:#67d39a;}
+.whatwedo-area ul li{ background:url(../img/small-right.png) left 30px no-repeat; color:#404142;}
+/*----- What We Do Area -----*/
+/*----- Customer Area -----*/
+.customer-area{ background:#f7f7f7;}
+.customer-area h2{ color:#4a99d7;}
+/*----- Customer Area -----*/
+/*----- Peoplelove Area -----*/
+.peoplelove-area h2{ color:#f7941d;}
+/*----- Peoplelove Area -----*/
+/*----- Foryou-area Area -----*/
+.foryou-area{ background:#f7f7f7;}
+.foryou-area h2{ color:#67d39a;}
+/*----- Foryou-area Area -----*/
+/*----- Serving-area Area -----*/
+.serving-area h2{ color:#f48080;}
+.other-citis a{ color:#404142;}
+.other-citis a:hover{color:#e88383;}
+.showmore a:hover{background:#e88383;}
+/*----- Serving-area Area -----*/
+/*----- Footer Area -----*/
+.footer-area{ background:#6c7180;}
+.footer-area ul li a{ color:#ebf0ff; }
+.footer-area ul li{ background:url(../img/footer-divider.jpg) right center no-repeat;}
+.footer-area ul li:last-child{ background:none;}
+.footer-area p{ color:#ebf0ff;}
+.footer-area ul li a:hover{ color:#e88383;}
+/*----- Footer Area -----*/
+/*----- inner Area -----*/
+.inner-area ul li{ background:url(../img/li.jpg) left center no-repeat; color:#474747;}
+.devider{ background:#dddddd;}
+.team-con h2{ color:#404142;}
+.team-con h3{ color:#6c7180;}
+.team-con p{color:#404142;}
+.team:hover .team-con{border-bottom-color:#e98283;}
+.team:hover .team-con h2{color:#e98283;}
+/*----- inner Area -----*/
+/*----- Side bar Area -----*/
+.side-table h3{ background:#f2f2f2;}
+.sidebar-area .side-table ul{ background:#fff;}
+/*----- Side bar Area -----*/
+/*----- Location Area -----*/
+.customer-area ul{ overflow:hidden; height:100%;}
+.customer-area ul li a{ color:#4a99d7;}
+.customer-area ul li a:hover{ color:#e88383;}
+.customer-area ul li span{ color:#404142;}
+.showmore a{color:#fff; background:#4a99d7;}
+/*----- Location Area -----*/
+/*----- Gallery Area -----*/
+.gallery-area ul li a{ color:#362f2d;}
+.gallery-area ul li a:hover{ color:#fff;}
+.gallery-area ul li:hover{ background:#e88383; color:#fff;}
+.pagination-area ul li{}
+.pagination-area .wp-pagenavi .page{ background:#6c7180 !important; color:#fff;}
+.pagination-area .wp-pagenavi .page:hover{ background:#e88383 !important; color:#fff;}
+.pagination-area .wp-pagenavi .current { background:#e88383; color: #fff; font-weight: normal;}
+/*----- Gallery Area -----*/
+/*----- Sidebar Area -----*/
+.bac-heading-con ul li{ color:#404142;}
+.side-table ul li span{ color:#e88383;}
+.sidebar-area .resent-con{ background:#f2f2f2;}
+.resent-con > div{ background: #fff;}
+.tagcloud{ padding: 20px;}
+.tagcloud a{ display: inline-block; margin: 5px;}
+.sidebar-area .resent-con ul li{ color:#404142;}
+.sidebar-area .resent-con ul{ background:#fff;}
+/*----- Sidebar Area -----*/
+/*----------requst page open----------*/
+.blank-white label, .grey label{ color:#646464;}
+.grey label span{ color:#e88383;}
+.lin{background-color:#ccc;}
+.grey h4,.blank-white h4{ color:#646464;}
+.grey{background-color:#f7f7f7;}
+.submet-btn{ color:#fff;background:#e88383;}
+.submet-btn:hover{color:#fff;background:#e88383;}
+.submet-btn{ background:#666; color:#fff;}
+/*----------requst page close----------*/
+/*----------------partner-------------*/
+.tx-div h4{color:#404142;}
+.sidebar-area ul li{ background: none;}
+.sidebar-area ul li a{ color:#000;}
+.sidebar-area ul li:hover {background: #f2f2f2;}
+.sidebar-area ul li a:hover{color: #0CF;}
+/*----------------partner-------------*/
+/*---------------- Blog -------------*/
+.readmore a{ background:#6c7180; color:#fff;}
+.readmore a:hover{ background:#e88383;}
+/*---------------- Blog -------------*/
+.default-ul2 ul li{background: url(../img/li-im.png) left center no-repeat;}

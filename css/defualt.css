@@ -1,0 +1,67 @@
+/*************************************************************Defualt Css****************************************************/
+behavior: url(PIE.htc);
+body{padding:0;margin:0;}
+label:focus, select:focus, option:focus, a, h1, h2, h3, h4, h5, h6{outline:0px !important;}
+td, div, h1, h2, h3, h4, h5, h6, p, input, form{margin:0;padding:0;}
+img{padding:0;margin:0;border:none;}
+ul{list-style:none;margin:0;padding:0;}
+.spacer{clear:both;line-height:0;font-size:0;}
+a{text-decoration: none;}
+a:hover, a:focus {text-decoration: none;}
+.padding{padding:20px 0 20px 0;}
+.paddingsmall{padding:10px 0 10px 0;}
+.paddingverysmall{padding:5px 0 5px 0;}
+.paddinglarge{padding:25px 0 25px 0;}
+.paddingverylarge{padding:30px 0 30px 0;}
+.paddinglarger{padding:30px 0 30px 0;}
+.paddingtopsmall{padding-top:10px;}
+.paddingtopverysmall{padding-top:5px;}
+.paddingtop{padding-top:20px;}
+.paddingtoplarge{padding-top:25px;}
+.paddingtopverylarge{padding-top:30px;}
+.paddingtoplarger{padding-top:35px;}
+.paddingbottomverysmall{padding-bottom:5px;}
+.paddingbottomsmall{padding-bottom:10px;}
+.paddingbottom{padding-bottom:20px;}
+.paddingbottomlarge{padding-bottom:25px;}
+.paddingbottomverylarge{padding-bottom:30px;}
+.paddingbottomlarger{padding-bottom:35px;}
+.margin{margin:20px 0 20px 0;}
+.marginsmall{margin:10px 0 10px 0;}
+.marginverysmall{margin:5px 0 5px 0;}
+.marginlarge{margin:25px 0 25px 0;}
+.marginverylarge{margin:30px 0 30px 0;}
+.marginlarger{margin:35px 0 35px 0;}
+.margintopsmall{margin-top:10px;}
+.margintopverysmall{margin-top:5px;}
+.margintop{margin-top:20px;}
+.margintoplarge{margin-top:25px;}
+.margintopverylarge{margin-top:30px;}
+.margintoplarger{margin-top:35px;}
+.marginbottomverysmall{margin-bottom:5px;}
+.marginbottomsmall{margin-bottom:10px;}
+.marginbottom{margin-bottom:20px;}
+.marginbottomlarge{margin-bottom:25px;}
+.marginbottomverylarge{margin-bottom:30px;}
+.marginbottomlarger{margin-bottom:35px;}
+.paddingrightsmall{padding-right:10px;}
+.paddingleftsmall{padding-left:10px;}
+.alignleft{float: left;}
+.alignright{float: right;}
+.aligncenter{display: block;margin-left: auto;margin-right: auto;}
+.entry-content img,
+.comment-content img,
+.widget img,
+img.header-image,
+.author-avatar img,
+img.wp-post-image {}
+img.alignleft {margin: 12px 24px 12px 0;margin: 0.857142857rem 1.714285714rem 0.857142857rem 0;}
+img.alignright {margin: 12px 0 12px 24px;margin: 0.857142857rem 0 0.857142857rem 1.714285714rem;}
+img.aligncenter {margin-top: 12px;margin-top: 0.857142857rem;margin-bottom: 12px;margin-bottom: 0.857142857rem;}
+.relative{position:relative;}
+.absolute{position:absolute;}
+hr{margin-bottom:30px;margin-top:30px;}
+.center{text-align:center;}
+.wrapper{width:100%;}
+.pld{padding-left:0;}
+.prd{padding-right:0;}

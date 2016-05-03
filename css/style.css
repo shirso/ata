@@ -1,0 +1,198 @@
+@charset "utf-8";
+/* CSS Document */
+h1, h2, h3, h4, h5, h6{margin-bottom:20px;}
+p{margin-bottom:15px;}
+i{ display: block; margin-bottom:10px;}
+a{word-wrap: break-word;}
+h5 a{display:inline-block !important;}
+/************************ Warning Box open *****************************/
+.warning-box{margin:0 auto; width:100%; display:none;padding:15px 0;}
+.warning-box h1{text-align:center;}
+.ie7 .warning-box{display:block;}
+/************************ Warning Box Close *****************************/
+/*----- Hearder -----*/
+.top-head{ padding:15px 0; border-bottom:1px solid #dddddd;}
+.call-us{ text-align:right; margin:10px 0;}
+#menu-area{ float:right;}
+#menu-area .navbar-default {background:none;border:none;}
+#menu-area .navbar{margin-bottom:0; min-height:inherit;}
+#menu-area .navbar-brand{display:none;}
+#menu-area .navbar-default .navbar-nav>li>a{padding:10px 14px;}
+#menu-area .navbar-default .navbar-nav>li{margin-left:1px;}
+#menu-area .navbar-collapse{ padding-right:0;}
+#menu-area .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, #menu-area .navbar-default .navbar-nav>li>a:hover{background: #e88383;color:#fff;}
+#menu-area .dropdown-menu>li>a {padding: 8px 20px;}
+#menu-area .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {color: #000;background-color: #4DD5CF;}
+#menu-area .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover{background:#fff;color:#000 !important;}
+#menu-area .navbar-default .navbar-brand {color: #000;}
+#menu-area .navbar-default .navbar-toggle {border: none; background:#e88383;}
+#menu-area .navbar-default .navbar-toggle .icon-bar {background-color: #FFF;}
+#menu-area .navbar-default .navbar-toggle:hover, #menu-area .navbar-default .navbar-toggle:focus {background-color: #000;}
+.dropdown > .dropdown-menu > .dropdown > .dropdown-menu {margin:0;left:158px;top:0;}
+#menu-area .dropdown-menu{ border:none;}
+#menu-area .navbar-nav {margin: 7.5px 0 7.5px -20px;}
+
+/*----- submain Hearder -----*/
+.call-us h3{margin-right:40px;}
+.call-us h2{ margin-bottom:4px; margin-top:25px;}
+/*----- submain Hearder-----*/
+/*----- Hearder -----*/
+.banner-area{ text-align:center; position:relative;}
+.banner-area .img-responsive{ display:inline-block;}
+.caption-area{ position:absolute; top:40%; width:100%; text-align:center;}
+/*----- Welcome -----*/
+.welcome-area{ padding:50px 0; text-align:center;}
+.welcome-area .container{ padding:0 128px;}
+/*----- Welcome -----*/
+/*----- Work Area -----*/
+.work-area{ background:#6c7180; text-align:center; padding: 55px 0;}
+.work-area-in .img-responsive{ display:inline-block;}
+.work-area h2{ margin-bottom:45px;}
+.work-area-in p{ margin-top:25px;}
+.work-area-in{ padding:0 35px;}
+/*----- Work Area -----*/
+/*----- What We Do Area -----*/
+.whatwedo-area{ padding:40px 0;}
+.whatwedo-area h2{ text-align:center;}
+.whatwedo-area ul{ margin-top:0px;}
+.whatwedo-area ul li{ padding:25px 0 25px 30px; line-height:20px;}
+/*----- What We Do Area -----*/
+/*----- Customer Area -----*/
+.customer-area{ padding:40px 0;}
+.customer-area .img-responsive{ display:inline-block;}
+.customer-area{ text-align:center;}
+/*----- Customer Area -----*/
+/*----- Peoplelove Area -----*/
+.peoplelove-area{ padding:40px 0;}
+.peoplelove-area .img-responsive{ display:inline-block;}
+.peoplelove-area{ text-align:center;}
+.peoplelove-area ul li{ display:inline-block; padding:0 10px; margin:30px 0;}
+/*----- Peoplelove Area -----*/
+/*----- Foryou-area Area -----*/
+.foryou-area{ text-align:center; padding:40px 0;}
+/*----- Foryou-area Area -----*/
+/*----- Serving-area Area -----*/
+.serving-area{ padding:40px 0;}
+.serving-area h2{ text-align:center;}
+.serving-area ul li, .serving-area ul li a{margin:10px 0;}
+.serving-area ul li{ display:inline-block; width:32%;}
+.serving-area ul li span, .serving-area ul li a{ margin-top:25px; display:inline-block;}
+.serving-area ul li img{ width:84px;}
+.other-citis{ text-align:center; clear:both; padding-top:20px;}
+.other-citis a{ display:inline-block;}
+.serving-area .li-sl,.serving-area .li-sa{display:none;}
+.customer-area .cus-li{display:none;}
+.showmore a{word-spacing:5px;}
+/*----- Serving-area Area -----*/
+/*----- Footer Area -----*/
+.footer-area{ text-align:center; padding:25px 0;}
+.footer-area ul li{ display:inline-block; padding:0 15px;}
+.footer-area p{ margin-top:30px; margin-bottom:0;}
+/*----- Footer Area -----*/
+/*----- Inner Area -----*/
+.inner-area{ padding:70px 0;}
+.inner-left{ padding-right:40px;}
+.inner-area ul{ margin-bottom:15px;}
+.inner-area ul li{ padding:10px 0 10px 15px; margin-left:20px;}
+.devider{ margin-bottom:15px; height:1px;}
+.team img{ width:100%;}
+.team-con h2{ margin-bottom:5px;}
+.team-con p{ margin-bottom:15px;}
+.team-con{ padding:15px; border-top:1px solid #dddddd;border-left:1px solid #dddddd;border-right:1px solid #dddddd; border-bottom:7px solid #6c7180;}
+.team-con{ cursor:pointer;}
+.team-con p{ display:none; border-top:1px solid #dddddd; margin-top:20px; padding-top:10px;}
+.team-con h3{ margin-bottom:0;}
+.team{ cursor:pointer;}
+/*----- inner Area -----*/
+/*----- Side bar Area -----*/
+.side-table h3{text-align:center; padding:20px 0; margin-bottom:0; border-bottom:1px solid #dddddd;}
+.bac-heading-con{ padding:15px; border:1px solid #dddddd; border-top:none;}
+.bac-heading h3{ margin-bottom:0;}
+.side-table{ margin-bottom:20px;}
+.sidebar-area .side-table ul{ margin-bottom:0; border:none;}
+.sidebar-area .side-table ul li{ background:none; margin-left:0; padding:15px 15px;border-bottom:1px solid #dddddd; border-top:none;}
+.side-table ul li:last-child{ border-bottom:none;}
+.side-table ul li span{ margin-left:70px;}
+.side-table{ border:1px solid #dddddd;}
+/*----- Side bar Area -----*/
+/*----- Location Area -----*/
+.customer-area ul{ margin:20px 0;}
+.customer-area ul li{ text-align:left;min-height:90px; margin:10px 0;}
+.customer-area ul li{ float: left; width:32%;}
+.customer-area ul li a{ display:inline-block; padding-top:20px;} 
+.customer-area ul li span{ display:block;}
+.showmore{ text-align:center;}
+.showmore a{ display: inline-block; padding: 13px 30px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; margin:15px 0;}
+/*----- Location Area -----*/
+/*----- Our Customer Area -----*/
+.our-customer{ margin:30px 200px;}
+.peoplelove-area .our-customer ul li{ padding: 5px; border: 1px solid #d5d5d5; margin:15px; width:154px;}
+/*----- Our Customer Area -----*/
+/*----- Gallery Area -----*/
+.gallery-area ul li{ padding:5px 5px 15px 5px; display:inline-block; border:1px solid #dddddd; background:none; width:18.3%; text-align:center;margin: 0 20px 20px 0;}
+.gallery-area ul li img{ padding-bottom:15px;}
+.gallery-area ul li:nth-child(5n+5){ margin-right:0;}
+.pagination-area .wp-pagenavi{ text-align:center; margin:30px 0;}
+.pagination-area .wp-pagenavi .page{ display:inline-block; margin:3; width:inherit; padding:0; border:none;}
+.pagination-area .wp-pagenavi .page{padding:5px 8px; }
+.pagination-area .wp-pagenavi .current { border: none; padding: 5px 8px;}
+/*----- Gallery Area -----*/
+/*----------requst page open----------*/
+.grey label{ margin-bottom:10px;}
+.grey input[type="text"], .grey input[type="email"], .grey input[type="tel"], .blank-white input[type="text"], .blank-white input[type="email"], .blank-white input[type="tel"]{ width:372px; padding:23px 0 23px 10px;}
+.blank-white select, .grey select{ width:272px; height:47px;}
+.grey{padding:30px 0;}
+.blank-white{ padding:30px 0;}
+.grey textarea, .blank-white textarea{ margin:15px 0;width:372px; height:250px; }
+.req-servise{ padding:50px 0 30px 0;}
+.submet-btn{text-align:center; padding:11px 26px; display:block; border:2px solid transparent;}
+.submet-btn{margin:10px 0 0px 0; display:inline-block; border-radius:5px; cursor:pointer;}
+/*----------request page close----------*/
+/*------partner-open-------------*/
+.sidebar-area ul{border:1px solid #dddddd;}
+.sidebar-area ul li{border-bottom:1px solid #dddddd; font-size:14px; padding:0;}
+.sidebar-area ul li a{padding:20px;}
+.sidebar-area ul li:last-child{border-bottom: none;}
+.sidebar-area ul li a{display: inline-block;}
+.im-div img{border:1px solid #CCC; padding:5px;}
+.tx-div h4{margin-bottom:10px;}
+.p-m-sec{padding:0 15px 15px 0 ; margin-bottom:25px; border-bottom:1px solid #CCC; }
+.p-m-sec:last-child{border:none;}
+.inner-area .sidebar-area ul li{ margin-left:0;}
+.im-div{ margin-right:20px;}
+.partner-con{ padding-bottom:20px; border-bottom:1px solid #dddddd; margin-bottom:20px;}
+.partner-con:last-child{ border-bottom:none; margin-bottom:0; padding-bottom:0;}
+.partner-con .im-div{ margin-right:0;}
+.partner-con a{ margin-bottom:10px; display:block;}
+/*-------------------partner-close----------------*/
+/*------------------- Blog Open ----------------*/
+.blog-con{ padding-bottom:20px; margin-bottom:20px; border-bottom:1px solid #dddddd;}
+.blog-con:last-child{ border-bottom:none; margin-bottom:0; padding-bottom:0;}
+.blog-con .im-div{ margin-right:0;}
+.blog-con .readmore{ text-align:right;}
+.readmore a{ padding:7px 25px; display: inline-block;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+.resent-con h3{ text-align:center; padding:20px 0; margin-bottom:0;}
+.resent-con{ border:1px solid #dddddd; margin-bottom:20px;}
+.sidebar-area .resent-con ul li{ border:none; padding:10px 0;list-style: square;}
+.sidebar-area .resent-con ul li a{ padding:0;}
+.sidebar-area .resent-con ul li:hover{ background:none; color:#0CF;}
+.sidebar-area .resent-con ul{ margin-bottom:0; padding-left:70px; padding-top:20px; padding-bottom:20px; border:none; border-top:1px solid #dddddd;}
+/*------------------- Blog close ----------------*/
+blockquote{ position:relative; border:none; padding-left: 60px;padding-top: 30px; background:#f8f8f8;}
+blockquote small{ font-style:normal; font-size:16px; font-family: 'latobold'; color:#404142;}
+blockquote p{ font-style:italic; font-size:16px;}
+blockquote:before{content: "\201C";font-family:Arial, Helvetica, sans-serif;font-size: 125px;font-weight: normal;color: #e1e0e0;position: absolute;left: 20px;top: 0;}
+.default-ul2{ margin-bottom:30px;}
+.map-div, .frm-div {margin: 30px 0 20px 0;}
+.blank-white select, .grey select{background: url(../img/seclect-arro.jpg) 95% 20px no-repeat,#FFF;-webkit-appearance: none;-moz-appearance: none;}
+.work-area-in i{ font-size:115px; margin-bottom:0; color:#fff; }
+<!--404---->
+.center {text-align: center; margin-left: auto; margin-right: auto; margin-bottom: auto; margin-top: auto; }
+.center h1{color:#000 !important;}
+#hu{ padding:140px;}
+#hu p{font-size:20px;}
+#hu a{ display: inline-block; padding:10px 20px;font-size:20px;}
+#hu a i{ margin:0 !important; }
+(08:00:57 PM) .sidebar-area .resent-con ul{ margin-bottom:0; padding-left:70px; padding-top:20px; padding-bottom:20px; border:none; border-top:1px solid #dddddd;}
+.so-link{background:url(../img/cering-im.png) left top no-repeat; margin-top:50px; padding:40px 5px 10px 15px; margin-bottom:24px;}
+.discus-sec{margin-top:25px;}
