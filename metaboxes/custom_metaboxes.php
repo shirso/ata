@@ -36,8 +36,8 @@ if (!class_exists('ATA_Custom_Metabox')) {
             </script>
             <div id="ata_images_div" style="display: none;">
                 <img src="<?=get_option('ata_region_map')?>" id="ata_regionMapImage">
-                <img src="<?= get_bloginfo('template_url')?>/img/pin.png" id="ata_pinImage">
-                <img src="<?= get_bloginfo('template_url')?>/img/dot.png" id="ata_dotImage">
+                <img src="<?= get_bloginfo('template_url')?>/assets/img/pin.png" id="ata_pinImage">
+                <img src="<?= get_bloginfo('template_url')?>/assets/img/dot.png" id="ata_dotImage">
             </div>
             <h2><?=__("Move pin on appropriate position","ata")?></h2>
             <div id="ata_region_points" style="width: 400px">

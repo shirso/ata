@@ -28,7 +28,7 @@ function elegance_widgets_init() {
   
    
    register_sidebar(array(
-        'name'                    => 'Sidebar Address',
+        'name'                    => 'Footer Side Address',
         'id'                         => 'sidebar',
         'description'   => __( 'Located in contact page sidebar'),
         'before_widget' => '',

@@ -42,7 +42,6 @@
     
     
     wp_enqueue_script("rm_script", $file_dir."/theme-options/js/rm_script.js", false, "1.0");
-    wp_enqueue_script("fabric_script", $file_dir."/js/fabric.js", false, "1.0");
     wp_enqueue_script("rm_script_migrate", $file_dir."/theme-options/js/jquery-migrate-1.2.1.min.js", false, "1.0");
     wp_enqueue_script("rm_script_checkbox", $file_dir."/theme-options/jqueryCheckbox/jquery.tzCheckbox.js", false, "1.0");
     wp_enqueue_script("rm_script_select", $file_dir."/theme-options/js/chosen.jquery.min.js", false, "1.0");

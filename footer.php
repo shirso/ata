@@ -1,17 +1,27 @@
 <!----- Footer Open  ------->
-<footer class="footer-area">
+<footer class="foter-m-sec">
     <div class="container">
-        <div class="row">
-             <?php 
-                                     wp_nav_menu( array(
-                                   'container'       => 'ul', 
-                                   'menu_class'      => '', 
-                                   'menu_id'         => '',
-                                   'depth'           => 0,
-                                   'theme_location' => 'footer_menu'
-                                   )); 
-              ?>
-            <p><?php echo get_option('university_footer_text');?></p>
+        <div class="col-sm-12 ">
+            <div class="cpysec clearfix">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="fotli">
+                            <?php
+                            wp_nav_menu( array(
+                                'container'       => 'ul',
+                                'menu_class'      => '',
+                                'menu_id'         => '',
+                                'depth'           => 0,
+                                'theme_location' => 'footer_menu',
+                            ));
+                            ?>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="alnr"><?=get_option("ata_footer_text")?></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </footer>

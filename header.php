@@ -66,66 +66,82 @@
   </style>
 <![endif]-->   
     <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <!--[if IE]><link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_url' ); ?>/css/ie.css"><![endif]-->
-    <!--[if lte IE 8]><script src="<?php bloginfo( 'template_url' ); ?>/js/respond.min.js"></script><![endif]-->
   
-  <?php $link_custom_css = get_option('university_custom_css'); ?>
+  <?php $link_custom_css = get_option('ata_custom_css'); ?>
 	<?php if($link_custom_css){?>
   <style type="text/css">
-  	<?php echo get_option('university_custom_css'); ?>
+  	<?php echo get_option('ata_custom_css'); ?>
   </style>
   <?php }?>
+    <?php if(is_user_logged_in()){?>
+    <style type="text/css">
+        @media (max-width: 767px) {
+            .pg_header {
+                margin-top: 40px;
+            }
+            .navbar-collapse{
+                margin-top: 145px!important;
+            }
+        }
+    </style>
+    <?php }?>
 </head>
 <body <?php body_class(); ?> >
-<!----- Header Open  ------->
-<header class="top-head">
+<?php $header_class=is_home() ? "pg_header" : "pg_header_2" ?>
+<section class="<?=$header_class?>">
     <div class="container">
-        <div class="row clearfix">
-            <div class="col-sm-4">
-                <div class="logo-area">
-                    <a href="<?php bloginfo('home') ?>"><img src="<?php echo get_option('university_logo');?>" class="img-responsive" alt="logo"></a>
+        <div class="row">
+            <div class="col-xs-4 col-sm-2">
+                <div class="lg-sec">
+                    <?php $logo_image=is_home() ? get_option('ata_logo') : get_option('ata_inner_logo'); ?>
+                    <a href="<?=bloginfo('home');?>"><img src="<?=$logo_image;?>" class="img-responsive"/></a>
                 </div>
             </div>
-            <div class="col-sm-8">
-                <div class="call-us">
-                    <h6><?php echo get_option('university_ph');?> </h6>
+            <div class="col-xs-8 col-sm-10">
+                <div class="hedlnk-sec">
+                    <ul>
+                        <li>
+                            <a href="<?=get_option('ata_lang_url')?>"><?=get_option('ata_lang_text')?></a>
+                        </li>
+                        <li>
+                            <a class="srch" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                            <div class="srch-frm">
+                                <form class="form-inline" method="get" id="searchform" action="<?php bloginfo('home'); ?>">
+                                    <div class="form-group">
+                                        <input name="s" class="form-control" type="text" placeholder="<?=__("Search","ata");?>" value="<?php the_search_query(); ?>">
+                                    </div>
+                                    <button type="submit" class="btn srch-btm-top"><i class="fa fa-search"></i></button>
+                                </form>
+                            </div>
+                        </li>
+                        <li><a href="<?=get_option("ata_fb")?>"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    </ul>
                 </div>
-                <div id="menu-area">
-                    <nav class="navbar navbar-default" role="navigation">
-                      <div class="container-fluid">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
-                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                          </button>
-                          <a class="navbar-brand" href="#">MENU</a>
+                            <button type="button" class="navbar-toggle collapsed nbartgl">
+                                <i></i>
+                            </button>
                         </div>
-                    
+
                         <!-- Collect the nav links, forms, and other content for toggling -->
-                            <!--Menu open -->
-                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                <?php 
-                                     wp_nav_menu( array(
-                                   'container'       => 'ul', 
-                                   'menu_class'      => 'nav navbar-nav', 
-                                   'menu_id'         => '',
-                                   'depth'           => 0,
-                                   'theme_location' => 'header_menu',
-                                   'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                                    'walker'            => new wp_bootstrap_navwalker()
-                                   )); 
-                                ?>
-                                </div>
-                            <!--Menu close -->
-                      </div>
-                    </nav>
-                </div>
+                        <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <?php
+                            wp_nav_menu( array(
+                                'container'       => 'ul',
+                                'menu_class'      => 'nav navbar-nav',
+                                'menu_id'         => '',
+                                'depth'           => 0,
+                                'theme_location' => 'header_menu',
+                            ));
+                            ?>
+                        </div>
+                    </div>
+                </nav>
             </div>
+
         </div>
     </div>
-</header>
-
-<!----- Header Close  ------->
+</section>
