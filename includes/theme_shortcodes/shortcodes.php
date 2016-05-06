@@ -12,12 +12,33 @@ function shortcode_banner($atts, $content = null,$shortcodename =""){
         $output.='<li>';
         $output.=get_the_post_thumbnail(get_the_ID(),'full',array('class'=>'img-responsive'));
         $output.='</li>';
-
     endwhile;
-
     $output.= '</ul>';
     $output.='</section>';
     wp_reset_query();
+    return $output;
+}
+add_shortcode('region_map', 'shortcode_region_map');
+function shortcode_region_map($atts, $content = null,$shortcodename =""){
+    extract(shortcode_atts(array(
+        "heading" => ''), $atts));
+    $output='';
+    $output.='<section class="raginalbgsec">';
+    $output.='<div class="container">';
+    $output.='<h1>'.$heading.'</h1>';
+    $output.='<div class="row">';
+    $output.='<div class="col-sm-6">';
+    $output.='<div class="mn-maap" id="ata_region_map">';
+    $output.='<canvas></canvas>';
+    $output.='</div>';
+    $output.='</div>';
+    $output.='<div class="col-sm-6">';
+    $output.='<div class="mpdetal-msec">';
+    $output.='</div>';
+    $output.='</div>';
+    $output.='</div>';
+    $output.='</div>';
+    $output.='</section>';
     return $output;
 }
 add_shortcode('customer-area', 'shortcode_customer_area');

@@ -70,12 +70,12 @@
 			tooltip: 'Insert a  Shortcode',
 			menu: [
 				{text: 'Home Page Elements', menu: [
-					{text: 'Banner', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'banner', { title: 'banner' } ); } },
+					{text: 'Banner', onclick: function() { editor.execCommand( 'cherry_insert_self_immediate', false, 'banner', { title: 'banner' } ); } },
 				]},
                 
 				 {
-                   text:'Request Page Elements', menu:[
-                   {text: 'Content Section', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'main_sec', { title: 'main_sec' } ); } } ,
+                   text:'Region Elements', menu:[
+                   {text: 'Region Map', onclick: function() { editor.execCommand( 'cherry_open_dialog', false, 'region_map', { title: 'Region Map' } ); } } ,
                    ] 
                  },
 				// Elements menu.
