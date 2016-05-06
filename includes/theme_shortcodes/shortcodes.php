@@ -22,7 +22,27 @@ add_shortcode('region_map', 'shortcode_region_map');
 function shortcode_region_map($atts, $content = null,$shortcodename =""){
     extract(shortcode_atts(array(
         "heading" => ''), $atts));
+    $all_posts=get_posts(
+        array(
+            'posts_per_page'   => -1,
+            'post_type'        => 'regions',
+            'post_status'      => 'publish',
+        )
+    );
+    $all_positions=array();
+    if(!empty($all_posts)){
+        foreach($all_posts as $region){
+                $region_position=get_post_meta($region->ID,"_ata_positions",true);
+                array_push($all_positions,array("id"=>$region->ID,"top"=>$region_position["y"],"left"=>$region_position["x"]));
+            }
+    }
+
     $output='';
+    $output.='<script>var region_map=true,ata_all_positions='.json_encode($all_positions).';</script>';
+    $output.='<div id="ata_images_div" style="display: none;">';
+    $output.='<img src="'.get_option("ata_region_map").'" id="ata_regionMapImage">';
+    $output.='<img src="'.get_bloginfo('template_url').'/assets/img/dot.png" id="ata_dotImage">';
+    $output.='</div>';
     $output.='<section class="raginalbgsec">';
     $output.='<div class="container">';
     $output.='<h1>'.$heading.'</h1>';
@@ -33,12 +53,20 @@ function shortcode_region_map($atts, $content = null,$shortcodename =""){
     $output.='</div>';
     $output.='</div>';
     $output.='<div class="col-sm-6">';
-    $output.='<div class="mpdetal-msec">';
+    $output.='<div class="mpdetal-msec" id="ata_region_content">';
     $output.='</div>';
     $output.='</div>';
     $output.='</div>';
     $output.='</div>';
     $output.='</section>';
+    return $output;
+}
+add_shortcode('region_text_block', 'shortcode_region_text_block');
+function shortcode_region_text_block($atts, $content = null,$shortcodename =""){
+    $output = '';
+    $output .= '<div class="jas-sec">';
+    $output .= do_shortcode($content);
+    $output .= '</div>';
     return $output;
 }
 add_shortcode('customer-area', 'shortcode_customer_area');

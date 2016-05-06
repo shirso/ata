@@ -1,6 +1,8 @@
 <?php
 add_action('wp_ajax_my_action', 'my_action_callback');
 add_action( 'wp_ajax_nopriv_my_action', 'my_action_callback' );
+add_action('wp_ajax_get_region_data', 'ata_get_region_data');
+add_action( 'wp_ajax_nopriv_get_region_data', 'ata_get_region_data' );
 function my_action_callback() {
         
         global $wpdb; // this is how you get access to the database
@@ -27,4 +29,11 @@ function my_carousel_load_callback() {
            
         die(); // this is required to return a proper result
     }
-?>
+function ata_get_region_data(){
+    $regionId=absint($_POST["regionId"]);
+    $content_post = get_post($regionId);
+    $content = $content_post->post_content;
+    $content = apply_filters('the_content', $content);
+    echo $content;
+    exit;
+}

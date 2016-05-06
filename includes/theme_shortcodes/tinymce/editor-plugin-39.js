@@ -76,7 +76,8 @@
 				 {
                    text:'Region Elements', menu:[
                    {text: 'Region Map', onclick: function() { editor.execCommand( 'cherry_open_dialog', false, 'region_map', { title: 'Region Map' } ); } } ,
-                   ] 
+                   {text: 'Text Block', onclick: function() { editor.execCommand( 'cherry_insert_immediate_n', false, 'region_text_block', { title: 'region_text_block' } ); } } ,
+                   ]
                  },
 				// Elements menu.
 				{text: 'Other Elements', menu: [

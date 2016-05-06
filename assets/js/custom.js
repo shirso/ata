@@ -107,4 +107,87 @@ jQuery(function($){
             }
         })
     });
+    $(window).load(function(){
+        if(typeof region_map!="undefined"){
+            var canvas = $('#ata_region_map').children('canvas').get(0);
+            var design = new fabric.Canvas(canvas, {
+                selection: false,
+                hoverCursor: 'normal',
+                rotationCursor: 'default',
+                centeredScaling: true
+            });
+            var designWidth = $('#ata_region_map').width();
+            design.setHeight(500);
+            design.setWidth(designWidth);
+            var imageInstance= new fabric.Image(document.getElementById('ata_regionMapImage'), {
+                top: 0,
+                left: 0,
+                id:"mainImage",
+                scaleX: 1,
+                scaleY: 1,
+                lockMovementX: true,
+                lockMovementY: true,
+                lockRotation: true,
+                lockScalingX: true,
+                lockScalingY: true,
+                lockUniScaling: true,
+                hasBorders:false,
+                hasControls:false
+            });
+            design.add(imageInstance);
+            setTimeout(function(){
+                $.each(ata_all_positions,function(k,v){
+                    var dotimageInstance= new fabric.Image(document.getElementById('ata_dotImage'), {
+                        top: parseInt(v.top)+26,
+                        left:parseInt(v.left)+13,
+                        id: v.id,
+                        scaleX: 1,
+                        scaleY: 1,
+                        hoverCursor: 'pointer',
+                        lockMovementX: true,
+                        lockMovementY: true,
+                        lockRotation: true,
+                        lockScalingX: true,
+                        lockScalingY: true,
+                        lockUniScaling: true,
+                        hasBorders:false,
+                        hasControls:false
+                    });
+                    design.add(dotimageInstance);
+                });
+            },2000)
+            design.on({
+                'object:selected': function(opts) {
+                     if (typeof opts.target.id != 'undefined') {
+                          var id=  opts.target.id;
+                         var objects=design.getObjects();
+                         for (var i in objects) {
+                             if(objects[i].id=="mainImage"){
+                                 continue;
+                             }
+                             if(objects[i].id===id){
+                                 objects[i].set({scaleX:1.5,scaleY:1.5});
+                                 objects[i].filters.push(new fabric.Image.filters.Tint({color: '#996604'}));
+                                 objects[i].applyFilters(design.renderAll.bind(design));
+                                 loadRegionData(id);
+                             }else{
+                                 objects[i].set({scaleX:1,scaleY:1});
+                                 objects[i].filters.push(new fabric.Image.filters.Tint({color: '#292f3d'}));
+                                 objects[i].applyFilters(design.renderAll.bind(design));
+                             }
+                         }
+                    }
+                }
+            });
+        }
+    });
+    var loadRegionData=function(regionId){
+        var data = {
+            'action': 'get_region_data',
+            'regionId': regionId
+        };
+        $.post(ata_data.ajaxurl, data, function(response) {
+           $("#ata_region_content").html(response);
+        });
+    };
 });
