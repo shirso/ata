@@ -3,7 +3,7 @@ function university_script(){
     if (!is_admin()) {
        wp_enqueue_script('masnory', get_bloginfo('template_url').'/assets/js/masonry.pkgd.min.js',array('jquery'),'1.0.1',true);
        wp_enqueue_script('bx-slider', get_bloginfo('template_url').'/assets/js/jquery.bxslider.min.js',array('jquery'),'1.0.1',true);
-       git wp_enqueue_script('custom', get_bloginfo('template_url').'/assets/js/custom.js',array('jquery'),'1.0.1',true);
+       wp_enqueue_script('custom', get_bloginfo('template_url').'/assets/js/custom.js',array('jquery'),'1.0.1',true);
     }
 }
 function university_styles(){
