@@ -76,9 +76,18 @@
 				 {
                    text:'Region Elements', menu:[
                    {text: 'Region Map', onclick: function() { editor.execCommand( 'cherry_open_dialog', false, 'region_map', { title: 'Region Map' } ); } } ,
-                   {text: 'Text Block', onclick: function() { editor.execCommand( 'cherry_insert_immediate_n', false, 'region_text_block', { title: 'region_text_block' } ); } } ,
+                   {text: 'Text Block', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'region_text_block', { title: 'region_text_block' } ); } } ,
+                   {text: 'List Block', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'region_list_block', { title: 'region_list_block' } ); } } ,
                    ]
                  },
+				{
+					text:'Grid Elements', menu:[
+					{text: 'Grid Block', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'grid', { title: 'Grid' } ); } } ,
+					{text: 'Container', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'container', { title: 'Container' } ); } } ,
+					{text: 'Row', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'row', { title: 'Row' } ); } } ,
+					{text: 'List Block', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'region_list_block', { title: 'region_list_block' } ); } } ,
+				]
+				},
 				// Elements menu.
 				{text: 'Other Elements', menu: [
 					

@@ -181,13 +181,21 @@ jQuery(function($){
             });
         }
     });
+
     var loadRegionData=function(regionId){
+        $('#ata_region_content').block({message: null,
+            overlayCSS: {
+                backgroundColor: '#fff',
+                opacity: 0.6
+            }
+        });
         var data = {
             'action': 'get_region_data',
             'regionId': regionId
         };
         $.post(ata_data.ajaxurl, data, function(response) {
            $("#ata_region_content").html(response);
+           $("#ata_region_content").unblock();
         });
     };
 });

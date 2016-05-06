@@ -69,7 +69,31 @@ function shortcode_region_text_block($atts, $content = null,$shortcodename =""){
     $output .= '</div>';
     return $output;
 }
-add_shortcode('customer-area', 'shortcode_customer_area');
+add_shortcode('region_list_block', 'shortcode_region_list_block');
+function shortcode_region_list_block($atts, $content = null,$shortcodename =""){
+    $output = '';
+    $output .= '<div class="inul-sec">';
+    $output .= do_shortcode($content);
+    $output .= '</div>';
+    return $output;
+}
+add_shortcode('grid', 'shortcode_grid_block');
+function shortcode_grid_block($atts, $content = null,$shortcodename =""){
+    $output = '';
+    $output .= '<section class="grrd-m-sec">';
+    $output .= do_shortcode($content);
+    $output .= '</section>';
+    return $output;
+}
+add_shortcode('container', 'shortcode_container_block');
+function shortcode_container_block($atts, $content = null,$shortcodename =""){
+    $output = '';
+    $output .= '<div class="container">';
+    $output .= do_shortcode($content);
+    $output .= '</div>';
+    return $output;
+}
+    add_shortcode('customer-area', 'shortcode_customer_area');
 function shortcode_customer_area($atts, $content = null,$shortcodename =""){ 
     
       

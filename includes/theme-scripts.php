@@ -1,8 +1,9 @@
 <?php
 function university_script(){
     if (!is_admin()) {
-       wp_enqueue_script('masnory', get_bloginfo('template_url').'/assets/js/masonry.pkgd.min.js',array('jquery'),'1.0.1',true);
+       wp_enqueue_script('jquery-masonry');
        wp_enqueue_script('bx-slider', get_bloginfo('template_url').'/assets/js/jquery.bxslider.min.js',array('jquery'),'1.0.1',true);
+       wp_enqueue_script('blockUI', get_bloginfo('template_url').'/assets/js/jquery.blockUI.min.js',array('jquery'),'1.0.1',true);
        wp_enqueue_script('fabric_js', get_bloginfo('template_url').'/assets/js/fabric.js',array('jquery'),'1.0.1',true);
        wp_register_script('custom', get_bloginfo('template_url').'/assets/js/custom.js',array('jquery'),'1.0.1',true);
        wp_localize_script('custom','ata_data',array('ajaxurl'=> admin_url('admin-ajax.php')));
