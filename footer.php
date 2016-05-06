@@ -1,6 +1,16 @@
-<!----- Footer Open  ------->
 <footer class="foter-m-sec">
     <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-push-6">
+                <?php if ( ! dynamic_sidebar( 'footer_sidebar1' )) :
+                endif; ?>
+            </div>
+            <div class="col-sm-6 col-sm-pull-6">
+                <?php if ( ! dynamic_sidebar( 'footer_sidebar2' )) :
+                endif; ?>
+                <?php if ( ! dynamic_sidebar( 'footer_sidebar3' )) :
+                endif; ?>
+            </div>
         <div class="col-sm-12 ">
             <div class="cpysec clearfix">
                 <div class="row">
@@ -23,11 +33,11 @@
                 </div>
             </div>
         </div>
+        </div>
     </div>
 </footer>
-
-<!----- Footer Close  ------->
-<?php wp_footer(); ?> <!-- this is used by many Wordpress features and for plugins to work proporly -->
-<?php echo stripslashes(get_option('university_ga_code')); ?>
+<section class="totop-btn"><i class="fa fa-angle-up" aria-hidden="true"></i></section>
+<?php wp_footer(); ?>
+<?php echo stripslashes(get_option('ata_ga_code')); ?>
 </body>
 </html>

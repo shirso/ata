@@ -87,13 +87,13 @@
     <?php }?>
 </head>
 <body <?php body_class(); ?> >
-<?php $header_class=is_home() ? "pg_header" : "pg_header_2" ?>
+<?php $header_class=is_home() || is_front_page() ? "pg_header" : "pg_header_2" ?>
 <section class="<?=$header_class?>">
     <div class="container">
         <div class="row">
             <div class="col-xs-4 col-sm-2">
                 <div class="lg-sec">
-                    <?php $logo_image=is_home() ? get_option('ata_logo') : get_option('ata_inner_logo'); ?>
+                    <?php $logo_image=is_home() || is_front_page() ? get_option('ata_logo') : get_option('ata_inner_logo'); ?>
                     <a href="<?=bloginfo('home');?>"><img src="<?=$logo_image;?>" class="img-responsive"/></a>
                 </div>
             </div>

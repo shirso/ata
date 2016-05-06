@@ -70,19 +70,7 @@
 			tooltip: 'Insert a  Shortcode',
 			menu: [
 				{text: 'Home Page Elements', menu: [
-                     {text: 'Full Width Box', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'full-width', { title: 'full-width' } ); } },
-                      {text: 'Icon Box', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'icon-box', { title: 'icon-box' } ); } },
-                    {text: 'Black Box', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'black-box', { title: 'black-box' } ); } },
-                    {text: 'List Box', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'list-box', { title: 'list-box' } ); } },
-                    
-					{text: 'Offwhite Box', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'offwhite-box', { title: 'offwhite-box' } ); } }, 
-                    {text: 'Awards Section', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'awards-section', { title: 'awards-section' } ); } } ,
-                    {text: 'Gray Box One', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'gray-box-one', { title: 'gray-box-one' } ); } } , 
-                   {text: 'Serving Area', onclick: function() { editor.execCommand( 'cherry_open_dialog', false, 'serving-area', { title: 'serving-area' } ); } },
-                   
-                   {text: 'Customer Area', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'customer-area', { title: 'customer-area' } ); } } ,
-                   {text: 'Customer Images', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'customer-images', { title: 'customer-images' } ); } } ,
-                   {text: 'University Area', onclick: function() { editor.execCommand( 'cherry_open_dialog', false, 'university-area', { title: 'university-area' } ); } } ,
+					{text: 'Banner', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'banner', { title: 'banner' } ); } },
 				]},
                 
 				 {

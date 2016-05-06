@@ -1,11 +1,11 @@
 <?php get_header(); ?>
-<!----- Body Open  ------->
- <section class="inner-area">
-    <div class="container">
-            <div class="main-sec">
-                <?php the_post();the_content();?>
-            </div>
-    </div>
-</section>
-<!----- Body Close  ------->
+    <section class="head-en tppp-flt-dv">
+        <div class="container">
+            <h1><?=the_title();?></h1>
+            <hr class="bdr1"/>
+        </div>
+    </section>
+
+<?php the_post();the_content();?>
+
 <?php get_footer();

@@ -1,7 +1,25 @@
 <?php
 // Grid Columns
 
-///RSS///  
+///RSS///
+add_shortcode('banner', 'shortcode_banner');
+function shortcode_banner($atts, $content = null,$shortcodename =""){
+    $output = '';
+    $output.='<section class="banner-m-sec">';
+    query_posts("post_type=banner&showposts=-1&post_status=publish");
+    $output.='<ul class="bxslider">';
+    while(have_posts()):the_post();
+        $output.='<li>';
+        $output.=get_the_post_thumbnail(get_the_ID(),'full',array('class'=>'img-responsive'));
+        $output.='</li>';
+
+    endwhile;
+
+    $output.= '</ul>';
+    $output.='</section>';
+    wp_reset_query();
+    return $output;
+}
 add_shortcode('customer-area', 'shortcode_customer_area');
 function shortcode_customer_area($atts, $content = null,$shortcodename =""){ 
     

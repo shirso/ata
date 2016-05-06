@@ -260,5 +260,25 @@ function ata_register_post_type(){
                 'title','editor','thumbnail')
         )
     );
+    register_post_type( 'partner',
+        array(
+            'label' => __('Partners','ata'),
+            'public' => false,
+            'show_ui' => true,
+            'show_in_nav_menus' => false,
+            'supports' => array(
+                'title','thumbnail')
+        )
+    );
+    register_post_type( 'banner',
+        array(
+            'label' => __('Banners','ata'),
+            'public' => false,
+            'show_ui' => true,
+            'show_in_nav_menus' => false,
+            'supports' => array(
+                'title','thumbnail')
+        )
+    );
 }
 add_action('init', 'ata_register_post_type');
