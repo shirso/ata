@@ -81,11 +81,30 @@
                    ]
                  },
 				{
+					text:'Contact Elements', menu:[
+					{text: 'Full Width Contact Block', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'single_contact_block', { title: 'Single Person Contact Block' } );}} ,
+					{text: 'Image Text Wrapper', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'contact_img_block', { title: 'Image Text Block' } ); } } ,
+					{text: 'Text Block', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'contact_text_block', { title: 'Text Block' } ); } } ,
+				]
+				},
+				{
 					text:'Grid Elements', menu:[
 					{text: 'Grid Block', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'grid', { title: 'Grid' } ); } } ,
 					{text: 'Container', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'container', { title: 'Container' } ); } } ,
-					{text: 'Row', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'row', { title: 'Row' } ); } } ,
-					{text: 'List Block', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'region_list_block', { title: 'region_list_block' } ); } } ,
+					{text: 'Row', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'row', { title: 'Row' } ); } },
+					{text: 'Text Block', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'grid_text_block', { title: 'Text Block' } ); } }
+				]
+				},
+				{
+					text:'Columns', menu:[
+					{text: 'Column 1', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'col-sm-1', { title: 'Column 1' } ); } },
+					{text: 'Column 2', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'col-sm-2', { title: 'Column 2' } ); } },
+					{text: 'Column 3', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'col-sm-3', { title: 'Column 3' } ); } },
+					{text: 'Column 4', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'col-sm-4', { title: 'Column 4' } ); } },
+					{text: 'Column 6', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'col-sm-6', { title: 'Column 6' } ); } },
+					{text: 'Column 8', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'col-sm-8', { title: 'Column 8' } ); } },
+					{text: 'Column 10', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'col-sm-10', { title: 'Column 10' } ); } },
+					{text: 'Column 12', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'col-sm-12', { title: 'Column 12' } ); } }
 				]
 				},
 				// Elements menu.

@@ -949,7 +949,7 @@ p {
   display: block;
 }
 /* line 427, ../sass/_normalize.scss */
-.grrd-m-sec ul li a {
+.grrd-m-sec ul li a,.grrd-m-sec ul li  {
   font-size: 16px;
   color: #fff;
   line-height: 32px;
@@ -1093,7 +1093,7 @@ p {
   margin: 0 0 100px 0;
 }
 /* line 524, ../sass/_normalize.scss */
-.bdy2-m-sec h1, .head-en h1 {
+.bdy2-m-sec h1, .head-en h1,.grrd-m-sec h1,.raginalbgsec h1 {
   text-align: center;
   font-size: 28px;
   color: #292f3d;

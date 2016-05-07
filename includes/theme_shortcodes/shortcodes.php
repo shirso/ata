@@ -93,7 +93,52 @@ function shortcode_container_block($atts, $content = null,$shortcodename =""){
     $output .= '</div>';
     return $output;
 }
-    add_shortcode('customer-area', 'shortcode_customer_area');
+add_shortcode('row', 'shortcode_row_block');
+function shortcode_row_block($atts, $content = null,$shortcodename =""){
+    $output = '';
+    $output .= '<div class="row">';
+    $output .= do_shortcode($content);
+    $output .= '</div>';
+    return $output;
+}
+add_shortcode('grid_text_block', 'shortcode_grid_text_block');
+function shortcode_grid_text_block($atts, $content = null,$shortcodename =""){
+    $output = '';
+    $output .= '<div class="held-ssec">';
+    $output .= do_shortcode($content);
+    $output .= '</div>';
+    return $output;
+}
+add_shortcode('contact_img_block', 'shortcode_contact_img_block');
+function shortcode_contact_img_block($atts, $content = null,$shortcodename =""){
+    $content = preg_replace(
+        '/<p>(([\s]*)|[\s]*(<img[^>]*>|\[[^\]]*\])[\s]*)<\/p>/',
+        '$3',
+        $content
+    );
+    $output = '';
+    $output .= '<div class="img-bxx">';
+    $output .= do_shortcode($content);
+    $output .= '</div>';
+    return $output;
+}
+add_shortcode('contact_text_block', 'shortcode_contact_text_block');
+function shortcode_contact_text_block($atts, $content = null,$shortcodename =""){
+    $output = '';
+    $output .= '<div class="intxt-sc">';
+    $output .= do_shortcode($content);
+    $output .= '</div>';
+    return $output;
+}
+add_shortcode('single_contact_block', 'shortcode_single_contact_block');
+function shortcode_single_contact_block($atts, $content = null,$shortcodename =""){
+    $output = '';
+    $output .= '<section class="bdy2-m-sec clearfix"><div class="container"><div class="col-sm-12 shr-m-sec"><div class="row">';
+    $output .= do_shortcode($content);
+    $output .= '</div></div></div></section>';
+    return $output;
+}
+add_shortcode('customer-area', 'shortcode_customer_area');
 function shortcode_customer_area($atts, $content = null,$shortcodename =""){ 
     
       
@@ -1137,13 +1182,9 @@ add_shortcode('col-sm-1','shubh_grid' );
 add_shortcode('col-sm-2','shubh_grid' );
 add_shortcode('col-sm-3','shubh_grid' );
 add_shortcode('col-sm-4','shubh_grid' );
-add_shortcode('col-sm-5','shubh_grid' );
 add_shortcode('col-sm-6','shubh_grid' );
-add_shortcode('col-sm-7','shubh_grid' );
 add_shortcode('col-sm-8','shubh_grid' );
-add_shortcode('col-sm-9','shubh_grid' );
 add_shortcode('col-sm-10','shubh_grid' );
-add_shortcode('col-sm-11','shubh_grid' );
 add_shortcode('col-sm-12','shubh_grid' );
 function shubh_grid($atts, $content = null,$shortcodename =""){
     

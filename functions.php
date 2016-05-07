@@ -66,7 +66,7 @@
     /**
     *Theme Custom filters and functions functions 
     */
-   
+
 add_filter("widget_title","title_filter",$itle);
 function title_filter ($title){
         return htmlentities(strip_tags(apply_filters("the_content",$title),"<span>"));
