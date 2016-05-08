@@ -168,6 +168,40 @@ function shortcode_single_contact_block($atts, $content = null,$shortcodename ="
     $output .= '</div></div></div></section>';
     return $output;
 }
+add_shortcode('society_block', 'shortcode_society_block');
+function shortcode_society_block($atts, $content = null,$shortcodename =""){
+    $output = '';
+    $output .= '<div class="bdy-grec clearfix"><div class="container">';
+    $output .= do_shortcode($content);
+    $output .= '</div></div>';
+    return $output;
+}
+add_shortcode('society_text_block', 'shortcode_society_text_block');
+function shortcode_society_text_block($atts, $content = null,$shortcodename =""){
+    $output = '';
+    $output .= '<div class="wwls-sec"><div class="alstex">';
+    $content = preg_replace(
+        '/<p>(([\s]*)|[\s]*(<img[^>]*>|\[[^\]]*\])[\s]*)<\/p>/',
+        '$3',
+        $content
+    );
+    $output .= do_shortcode($content);
+    $output .= '</div></div>';
+    return $output;
+}
+add_shortcode('society_button_block', 'shortcode_society_button_block');
+function shortcode_society_button_block($atts, $content = null,$shortcodename =""){
+    $output = '';
+    $output .= '<div class="lsst-btn">';
+    $content = preg_replace(
+        '/<p>(([\s]*)|[\s]*(<img[^>]*>|\[[^\]]*\])[\s]*)<\/p>/',
+        '$3',
+        $content
+    );
+    $output .= do_shortcode($content);
+    $output .= '</div>';
+    return $output;
+}
 add_shortcode('customer-area', 'shortcode_customer_area');
 function shortcode_customer_area($atts, $content = null,$shortcodename =""){ 
     

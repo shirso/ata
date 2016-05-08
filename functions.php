@@ -67,6 +67,18 @@
     *Theme Custom filters and functions functions 
     */
 
+    function wpex_fix_shortcodes($content){
+
+        $array = array (
+            '<p>[' => '[',
+            ']</p>' => ']',
+            ']<br />' => ']'
+        );
+        $content = strtr($content, $array);
+        return $content;
+    }
+    add_filter('the_content', 'wpex_fix_shortcodes');
+
 add_filter("widget_title","title_filter",$itle);
 function title_filter ($title){
         return htmlentities(strip_tags(apply_filters("the_content",$title),"<span>"));

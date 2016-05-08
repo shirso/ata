@@ -89,6 +89,13 @@
 				]
 				},
 				{
+					text:'Society Elements', menu:[
+					{text: 'Full Width Society Block', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'society_block', { title: 'Full Width Society Block' } );}} ,
+					{text: 'Text Block', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'society_text_block', { title: 'Text Block' } ); } } ,
+					{text: 'Normal Button', onclick: function() { editor.execCommand( 'cherry_open_dialog', false, 'society_button', { title: 'Normal Button' } ); } }
+				]
+				},
+				{
 					text:'Grid Elements', menu:[
 					{text: 'Grid Block', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'grid', { title: 'Grid' } ); } } ,
 					{text: 'Container', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'container', { title: 'Container' } ); } } ,

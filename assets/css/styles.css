@@ -718,13 +718,16 @@ p {
   color: #000;
   font-weight: 600;
   margin: 0;
+  font-size: 24px;
 }
 /* line 343, ../sass/_normalize.scss */
 .bdy-grec .alstex span {
+  color: #333333;
   font-size: 12px;
   font-weight: 400;
   margin: 0;
 }
+.bdy-grec .alstex p{margin: 0;}
 /* line 345, ../sass/_normalize.scss */
 .bdy-grec .wwls-sec .col-sm-12 {
   margin-bottom: 20px;
