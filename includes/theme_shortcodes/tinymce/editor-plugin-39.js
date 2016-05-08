@@ -85,6 +85,7 @@
 					{text: 'Full Width Contact Block', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'single_contact_block', { title: 'Single Person Contact Block' } );}} ,
 					{text: 'Image Text Wrapper', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'contact_img_block', { title: 'Image Text Block' } ); } } ,
 					{text: 'Text Block', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'contact_text_block', { title: 'Text Block' } ); } } ,
+					{text: 'Regional Contacts', onclick: function() { editor.execCommand( 'cherry_open_dialog', false, 'contact_regional', { title: 'Regional Contacts' } ); } }
 				]
 				},
 				{

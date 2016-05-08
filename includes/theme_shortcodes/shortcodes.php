@@ -61,6 +61,18 @@ function shortcode_region_map($atts, $content = null,$shortcodename =""){
     $output.='</section>';
     return $output;
 }
+add_shortcode('contact_regional', 'shortcode_contact_regional');
+function shortcode_contact_regional($atts, $content = null,$shortcodename =""){
+    extract(shortcode_atts(array(
+        "heading" => ''), $atts));
+    $output='';
+    $output.='<section class="bdy-gra-msec text-center">';
+    $output.='<div class="container">';
+    $output.='<h1>'.$heading.'</h1>';
+    $output.='</div>';
+    $output.='</section>';
+    return $output;
+}
 add_shortcode('region_text_block', 'shortcode_region_text_block');
 function shortcode_region_text_block($atts, $content = null,$shortcodename =""){
     $output = '';

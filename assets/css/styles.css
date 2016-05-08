@@ -461,7 +461,7 @@ p {
   margin-top: 30px;
 }
 /* line 223, ../sass/_normalize.scss */
-.shrsec2 h4 {
+.shrsec2 h4,.shr-m-sec h4 {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   font-weight: 600;

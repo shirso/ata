@@ -260,6 +260,22 @@ function ata_register_post_type(){
                 'title','editor','thumbnail')
         )
     );
+    register_taxonomy('forum_cat', 'forum', array(
+        'hierarchical' => true,
+        'labels' => array(
+            'name' => __( 'Category', 'ata' ),
+            'singular_name' => __( 'Category', 'ata' ),
+            'search_items' =>  __( 'Search Categories','ata' ),
+            'all_items' => __( ' Categories','ata' ),
+            'parent_item' => __( 'Parent Category' ),
+            'parent_item_colon' => __( 'Parent Category:','ata' ),
+            'edit_item' => __( 'Edit Category','ata' ),
+            'update_item' => __( 'Update Category','ata' ),
+            'add_new_item' => __( 'Add New Category','ata' ),
+            'new_item_name' => __( 'New Category Name','ata' ),
+            'menu_name' => __( 'Category','ata' ),
+        )
+    ));
     register_post_type( 'partner',
         array(
             'label' => __('Partners','ata'),
