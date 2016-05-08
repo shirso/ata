@@ -3,6 +3,8 @@ add_action('wp_ajax_my_action', 'my_action_callback');
 add_action( 'wp_ajax_nopriv_my_action', 'my_action_callback' );
 add_action('wp_ajax_get_region_data', 'ata_get_region_data');
 add_action( 'wp_ajax_nopriv_get_region_data', 'ata_get_region_data' );
+add_action('wp_ajax_get_regional_contact_data', 'ata_get_regional_contact_data');
+add_action( 'wp_ajax_nopriv_get_regional_contact_data', 'ata_get_regional_contact_data' );
 function my_action_callback() {
         
         global $wpdb; // this is how you get access to the database
@@ -35,5 +37,35 @@ function ata_get_region_data(){
     $content = $content_post->post_content;
     $content = apply_filters('the_content', $content);
     echo $content;
+    exit;
+}
+function ata_get_regional_contact_data(){
+   $termId=absint($_POST["termId"]);
+    $args = array(
+        'post_type' => 'forum',
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'forum_cat',
+                'field' => 'id',
+                'terms' => $termId
+            )
+        )
+    );
+    $query = new WP_Query( $args );
+    $html='';
+    if(isset($query->posts) && !empty($query->posts)){
+        $c=0;
+        foreach($query->posts as $term_post){
+          $extraClass=$c==0 ? "mmato" : "";
+          $html.='<div class="img-bxx '.$extraClass.' clearfix">';
+          $html.=get_the_post_thumbnail($term_post->ID,'full',array('class'=>'img-responsive'));
+          $html.='<div class="intxt-sc">';
+          $html.=apply_filters('the_content', $term_post->post_content);
+          $html.='</div>';
+          $html.='</div>';
+            $c++;
+        }
+    }
+    echo $html;
     exit;
 }

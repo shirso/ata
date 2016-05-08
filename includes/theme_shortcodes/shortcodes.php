@@ -65,10 +65,28 @@ add_shortcode('contact_regional', 'shortcode_contact_regional');
 function shortcode_contact_regional($atts, $content = null,$shortcodename =""){
     extract(shortcode_atts(array(
         "heading" => ''), $atts));
+    $all_terms=$terms = get_terms( 'forum_cat', array(
+        'hide_empty' => true,
+    ));
+
     $output='';
     $output.='<section class="bdy-gra-msec text-center">';
     $output.='<div class="container">';
     $output.='<h1>'.$heading.'</h1>';
+    $output.='<div class="selectmm-sec">';
+    $output.='<div class="selectbx">';
+    $output.='<select id="ata_regional_contact">';
+    if(!empty($all_terms)){
+        foreach($all_terms as $term){
+         $output.='<option value="'.$term->term_id.'">'.$term->name.'</option>';
+        }
+    }
+
+    $output.='</select>';
+    $output.='</div>';
+    $output.='</div>';
+    $output.='<hr class="bdr2"/>';
+    $output.='<div id="ata_regional_contact_show"></div>';
     $output.='</div>';
     $output.='</section>';
     return $output;

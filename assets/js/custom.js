@@ -181,6 +181,9 @@ jQuery(function($){
             });
         }
     });
+$(document).on("change","#ata_regional_contact",function(e){
+   loadRegionalContactData($(this).val());
+});
 
     var loadRegionData=function(regionId){
         $('#ata_region_content').block({message: null,
@@ -198,4 +201,21 @@ jQuery(function($){
            $("#ata_region_content").unblock();
         });
     };
+    var loadRegionalContactData=function(termId){
+        $('#ata_regional_contact_show').block({message: null,
+            overlayCSS: {
+                backgroundColor: '#fff',
+                opacity: 0.6
+            }
+        });
+        var data = {
+            'action': 'get_regional_contact_data',
+            'termId': termId
+        };
+        $.post(ata_data.ajaxurl, data, function(response) {
+            $("#ata_regional_contact_show").html(response);
+            $("#ata_regional_contact_show").unblock();
+        });
+    };
+    loadRegionalContactData($("#ata_regional_contact").val());
 });
