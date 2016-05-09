@@ -202,6 +202,46 @@ function shortcode_society_button_block($atts, $content = null,$shortcodename ="
     $output .= '</div>';
     return $output;
 }
+add_shortcode('membership_gray_block', 'shortcode_membership_gray_block');
+function shortcode_membership_gray_block($atts, $content = null,$shortcodename =""){
+    $output = '';
+    $output .= '<section class="bdy2-m-sec clearfix"> <div class="sbdy-ssec"><div class="container">';
+    $output .= do_shortcode($content);
+    $output .= '</div></div></section>';
+    return $output;
+}
+add_shortcode('membership_blue_block', 'shortcode_membership_blue_block');
+function shortcode_membership_blue_block($atts, $content = null,$shortcodename =""){
+    $output = '';
+    $output .= '<section class="bdy-gra-msec clearfix"><div class="container">';
+    $output .= do_shortcode($content);
+    $output .= '</div></section>';
+    return $output;
+}
+add_shortcode('membership_divider', 'shortcode_membership_divider');
+function shortcode_membership_divider($atts, $content = null,$shortcodename =""){
+    $output = '';
+    $output .= '<hr class="bdr2"/>';
+    return $output;
+}
+add_shortcode('membership_text_block', 'shortcode_membership_text_block');
+function shortcode_membership_text_block($atts, $content = null,$shortcodename =""){
+    $output = '';
+    $output .= '<div class="ftwthsec">';
+    $output .= do_shortcode($content);
+    $output .= '</div>';
+    return $output;
+}
+add_shortcode('membership_button_row', 'shortcode_membership_button_row');
+function shortcode_membership_button_row($atts, $content = null,$shortcodename =""){
+    $output = '';
+    $output .= '<div class="row mmtp">';
+    $output .= do_shortcode($content);
+    $output .= '</div>';
+    return $output;
+}
+
+
 add_shortcode('customer-area', 'shortcode_customer_area');
 function shortcode_customer_area($atts, $content = null,$shortcodename =""){ 
     
@@ -536,10 +576,21 @@ function shortcode_green_rectangular_area($atts, $content = null,$shortcodename 
      $output .= '</div>';
     return $output;
  
-} 
-  
-  
-   add_shortcode('process', 'shortcode_green_process');
+}
+add_shortcode('ata_button', 'shortcode_button');
+function shortcode_button($atts, $content = null,$shortcodename =""){
+    extract(shortcode_atts(array(
+        "text" => '',
+        'target' =>  '_self',
+        'link' =>  '#',
+    ), $atts));
+    $output = '';
+    $output.='<div class="att-btn">';
+    $output.='<a href="'.link.'" target="'.$target.'">'.$text.'</a>';
+    $output.='</div>';
+    return $output;
+}
+    add_shortcode('process', 'shortcode_green_process');
 function shortcode_green_process($atts, $content = null,$shortcodename =""){ 
     
      extract(shortcode_atts(array(

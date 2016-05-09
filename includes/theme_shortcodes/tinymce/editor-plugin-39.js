@@ -96,6 +96,15 @@
 				]
 				},
 				{
+					text:'Membership Elements', menu:[
+					{text: 'Full Width Gray Block', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'membership_gray_block', { title: 'Full Width Gray Block' } );}} ,
+					{text: 'Full Width Blue Block', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'membership_blue_block', { title: 'Full Width Blue Block' } ); } } ,
+					{text: 'Divider', onclick: function() { editor.execCommand( 'cherry_insert_self_immediate', false, 'membership_divider', { title: 'Divider' } ); } } ,
+					{text: 'Text Block', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'membership_text_block', { title: 'Text Block' } ); } } ,
+					{text: 'Button Row', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'membership_button_row', { title: 'Button Row' } ); } } ,
+				]
+				},
+				{
 					text:'Grid Elements', menu:[
 					{text: 'Grid Block', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'grid', { title: 'Grid' } ); } } ,
 					{text: 'Container', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'container', { title: 'Container' } ); } } ,
@@ -123,11 +132,8 @@
 				
 				// Misc menu.
 				{text: 'Misc', menu: [
-					
-                    {text: 'Devider', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'divider', { title: 'divider' } ); } } ,
-                    {text: 'Small', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'small', { title: 'small' } ); } } ,
 					{text: 'Span', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'span', { title: 'span' } ); } } ,
-                    {text: 'Icon', onclick: function() { editor.execCommand( 'cherry_open_dialog', false, 'icon', { title: 'Icon' } ); } },
+					{text: 'Button', onclick: function() { editor.execCommand( 'cherry_open_dialog', false, 'button', { title: 'button' } ); } } ,
 				]},
 				
 			]

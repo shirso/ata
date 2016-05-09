@@ -188,7 +188,7 @@ $(document).on("change","#ata_regional_contact",function(e){
     var loadRegionData=function(regionId){
         $('#ata_region_content').block({message: null,
             overlayCSS: {
-                backgroundColor: '#fff',
+                background: 'transparent',
                 opacity: 0.6
             }
         });
@@ -204,7 +204,7 @@ $(document).on("change","#ata_regional_contact",function(e){
     var loadRegionalContactData=function(termId){
         $('#ata_regional_contact_show').block({message: null,
             overlayCSS: {
-                backgroundColor: '#fff',
+                background: 'transparent',
                 opacity: 0.6
             }
         });

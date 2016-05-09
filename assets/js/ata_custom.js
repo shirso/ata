@@ -4,7 +4,7 @@ jQuery(function($){
             var canvas = $('#ata_region_points').children('canvas').get(0);
             var design = new fabric.Canvas(canvas, {
                 selection: false,
-                hoverCursor: 'pointer',
+                hoverCursor: 'normal',
                 rotationCursor: 'default',
                 centeredScaling: true
             });
@@ -31,6 +31,7 @@ jQuery(function($){
                 left:parseInt(ata_positions.x),
                 scaleX: 1,
                 scaleY: 1,
+                hoverCursor: 'pointer',
                 lockMovementX: false,
                 lockMovementY: false,
                 lockRotation: true,
@@ -51,6 +52,7 @@ jQuery(function($){
                         left:parseInt(v.x)+13,
                         scaleX: 1,
                         scaleY: 1,
+                        hoverCursor: 'normal',
                         lockMovementX: true,
                         lockMovementY: true,
                         lockRotation: true,
