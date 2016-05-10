@@ -240,6 +240,24 @@ function shortcode_membership_button_row($atts, $content = null,$shortcodename =
     $output .= '</div>';
     return $output;
 }
+add_shortcode('society_button_row', 'shortcode_society_button_row');
+function shortcode_society_button_row($atts, $content = null,$shortcodename =""){
+    $output = '';
+    $output .= '<div class="row">';
+    $output .= do_shortcode($content);
+    $output .= '</div><div class="row"></div>';
+    return $output;
+}
+add_shortcode('toggle_button', 'shortcode_toggle_button');
+function shortcode_toggle_button($atts, $content = null,$shortcodename =""){
+    extract(shortcode_atts(array(
+        "text" => '',
+        "category"=>'',
+    ), $atts));
+    $output = '';
+    $output.='<div class="lsst-btn"><a href="#" class="ata_toggle_button" data-category="'.$category.'">'.$text.'</a></div>';
+    return $output;
+}
 
 
 add_shortcode('customer-area', 'shortcode_customer_area');
@@ -1305,6 +1323,22 @@ function shubh_grid($atts, $content = null,$shortcodename =""){
     
     $output ="";
     $output .= '<div class="'.$shortcodename.'">';
+    $output .= do_shortcode($content);
+    $output .= '</div>';
+    return $output;
+}
+add_shortcode('col-xs-1','shubh_grid_xs' );
+add_shortcode('col-xs-2','shubh_grid_xs' );
+add_shortcode('col-xs-3','shubh_grid_xs' );
+add_shortcode('col-xs-4','shubh_grid_xs' );
+add_shortcode('col-xs-6','shubh_grid_xs' );
+add_shortcode('col-xs-8','shubh_grid_xs' );
+add_shortcode('col-xs-10','shubh_grid_xs' );
+add_shortcode('col-xs-12','shubh_grid_xs' );
+function shubh_grid_xs($atts, $content = null,$shortcodename =""){
+     $smclass=str_replace('xs','sm',$shortcodename);
+    $output ="";
+    $output .= '<div class="'.$shortcodename.' '.$smclass.'">';
     $output .= do_shortcode($content);
     $output .= '</div>';
     return $output;

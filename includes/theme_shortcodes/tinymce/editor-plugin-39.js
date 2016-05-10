@@ -92,7 +92,8 @@
 					text:'Society Elements', menu:[
 					{text: 'Full Width Society Block', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'society_block', { title: 'Full Width Society Block' } );}} ,
 					{text: 'Text Block', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'society_text_block', { title: 'Text Block' } ); } } ,
-					{text: 'Normal Button', onclick: function() { editor.execCommand( 'cherry_open_dialog', false, 'society_button', { title: 'Normal Button' } ); } }
+					{text: 'Toggle Button Row', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'society_button_row', { title: 'Toggle Button Row' } ); } },
+					{text: 'Toggle Button', onclick: function() { editor.execCommand( 'cherry_open_dialog', false, 'toggle_button', { title: 'Toggle Button' } ); } }
 				]
 				},
 				{
@@ -113,7 +114,7 @@
 				]
 				},
 				{
-					text:'Columns', menu:[
+					text:'Medium(Tab)Device Columns', menu:[
 					{text: 'Column 1', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'col-sm-1', { title: 'Column 1' } ); } },
 					{text: 'Column 2', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'col-sm-2', { title: 'Column 2' } ); } },
 					{text: 'Column 3', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'col-sm-3', { title: 'Column 3' } ); } },
@@ -122,6 +123,18 @@
 					{text: 'Column 8', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'col-sm-8', { title: 'Column 8' } ); } },
 					{text: 'Column 10', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'col-sm-10', { title: 'Column 10' } ); } },
 					{text: 'Column 12', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'col-sm-12', { title: 'Column 12' } ); } }
+				]
+				},
+				{
+					text:'Small(Mobile)Device Columns', menu:[
+					{text: 'Column 1', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'col-xs-1', { title: 'Column 1' } ); } },
+					{text: 'Column 2', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'col-xs-2', { title: 'Column 2' } ); } },
+					{text: 'Column 3', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'col-xs-3', { title: 'Column 3' } ); } },
+					{text: 'Column 4', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'col-xs-4', { title: 'Column 4' } ); } },
+					{text: 'Column 6', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'col-xs-6', { title: 'Column 6' } ); } },
+					{text: 'Column 8', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'col-xs-8', { title: 'Column 8' } ); } },
+					{text: 'Column 10', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'col-xs-10', { title: 'Column 10' } ); } },
+					{text: 'Column 12', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'col-xs-12', { title: 'Column 12' } ); } }
 				]
 				},
 				// Elements menu.
