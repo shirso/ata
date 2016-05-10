@@ -218,4 +218,34 @@ $(document).on("change","#ata_regional_contact",function(e){
         });
     };
     loadRegionalContactData($("#ata_regional_contact").val());
+    $(document).on("click",".ata_toggle_button",function(e){
+        e.preventDefault();
+        var parentRow= $(this).closest('.row'),
+            categorySlug=$(this).data('category'),
+            thisParent=$(this).parent(),
+            nextRow=parentRow.next();
+        if(thisParent.hasClass("acctv")){
+            return false;
+        }
+        $('.display_toggle').slideUp('slow');
+        $(nextRow).html('');
+        $(nextRow).slideDown('slow');
+        $(nextRow).block({message: null,
+            overlayCSS: {
+                background: 'transparent',
+                opacity: 0.6
+            }
+        });
+        var data = {
+            'action': 'get_society_data',
+            'category': categorySlug
+        };
+        $.post(ata_data.ajaxurl, data, function(response) {
+            $(nextRow).html(response);
+            $(nextRow).unblock();
+            $('.lsst-btn').removeClass('acctv');
+            $(thisParent).addClass('acctv');
+            $(".display_toggle").not(this).hide("slow");
+        });
+    });
 });

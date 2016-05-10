@@ -245,7 +245,7 @@ function shortcode_society_button_row($atts, $content = null,$shortcodename ="")
     $output = '';
     $output .= '<div class="row">';
     $output .= do_shortcode($content);
-    $output .= '</div><div class="row"></div>';
+    $output .= '</div><div class="display_toggle"></div>';
     return $output;
 }
 add_shortcode('toggle_button', 'shortcode_toggle_button');

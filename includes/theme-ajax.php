@@ -5,6 +5,8 @@ add_action('wp_ajax_get_region_data', 'ata_get_region_data');
 add_action( 'wp_ajax_nopriv_get_region_data', 'ata_get_region_data' );
 add_action('wp_ajax_get_regional_contact_data', 'ata_get_regional_contact_data');
 add_action( 'wp_ajax_nopriv_get_regional_contact_data', 'ata_get_regional_contact_data' );
+add_action('wp_ajax_get_society_data', 'ata_get_society_data');
+add_action( 'wp_ajax_nopriv_get_society_data', 'ata_get_society_data' );
 function my_action_callback() {
         
         global $wpdb; // this is how you get access to the database
@@ -65,7 +67,41 @@ function ata_get_regional_contact_data(){
           $html.='</div>';
             $c++;
         }
+
     }
+    wp_reset_query();
+    echo $html;
+    exit;
+}
+function ata_get_society_data(){
+    $category=sanitize_text_field($_POST["category"]);
+    $args = array(
+        'post_type' => 'society',
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'society_cat',
+                'field' => 'slug',
+                'terms' => $category
+            )
+        )
+    );
+    $query = new WP_Query( $args );
+    $html='';
+    $html.='<div class="sull-mssec">';
+    $html.='<div class="bxxpr-sec">';
+    if(isset($query->posts) && !empty($query->posts)){
+        foreach($query->posts as $term_post){
+            $html.='<div class="bxxl-sec">';
+            $html.=get_the_post_thumbnail($term_post->ID,'full',array('class'=>'img-responsive'));
+            $html.='<div class="bxtx-sec">';
+            $html.=apply_filters('the_content', $term_post->post_content);
+            $html.='</div>';
+            $html.='</div>';
+        }
+    }
+    $html.='</div>';
+    $html.='</div>';
+    wp_reset_query();
     echo $html;
     exit;
 }
