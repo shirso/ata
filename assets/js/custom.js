@@ -116,6 +116,7 @@ jQuery(function($){
                 rotationCursor: 'default',
                 centeredScaling: true
             });
+            design.allowTouchScrolling = true;
             var designWidth = $('#ata_region_map').width();
             design.setHeight(500);
             design.setWidth(designWidth);
@@ -245,7 +246,7 @@ $(document).on("change","#ata_regional_contact",function(e){
             $(nextRow).unblock();
             $('.lsst-btn').removeClass('acctv');
             $(thisParent).addClass('acctv');
-            $(".display_toggle").not(this).hide("slow");
+            $(".display_toggle").not(nextRow).hide("slow");
         });
     });
 });

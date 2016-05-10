@@ -975,7 +975,7 @@ p {
 .img-bxx, .bxxl-sec {
   background: #52617d;
   display: inline-block;
-  max-width: 450px;
+  max-width: 470px;
   margin: 0 10px 20px 10px;
 }
 /* line 443, ../sass/_normalize.scss */
@@ -1017,7 +1017,7 @@ p {
 
 /* line 473, ../sass/_normalize.scss */
 .bxxl-sec .bxtx-sec {
-  padding: 18px 13px;
+  padding: 18px 10px;
 }
 /* line 474, ../sass/_normalize.scss */
 .bxxl-sec .bxtx-sec span {
@@ -1461,7 +1461,7 @@ hr.bdr2 {
   }
 
   /* line 712, ../sass/_normalize.scss */
-  .bdy-grec .wwls-sec .lsst-btn a, .bdy-grec .wwls-sec .ext-btn a {
+  .bdy-grec .lsst-btn a, .bdy-grec .ext-btn a {
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 12px;
@@ -2451,4 +2451,10 @@ hr.bdr2 {
 /* line 1213, ../sass/_normalize.scss */
 .fotli ul li:first-child {
   border-left: none;
+}
+
+/* line 1214, ../sass/_normalize.scss */
+.bdy-grec .lsst-btn.acctv a:hover, .bdy-grec .lsst-btn.acctv a:focus {
+  background: #fff !important;
+  color: #41506B !important;
 }
