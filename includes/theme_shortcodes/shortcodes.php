@@ -258,7 +258,48 @@ function shortcode_toggle_button($atts, $content = null,$shortcodename =""){
     $output.='<div class="lsst-btn"><a href="#" class="ata_toggle_button" data-category="'.$category.'">'.$text.'</a></div>';
     return $output;
 }
-
+add_shortcode('ata_carousel', 'shortcode_ata_carousel');
+function shortcode_ata_carousel($atts, $content = null,$shortcodename =""){
+    $output='';
+    $output.='<script>var carouselPage=true</script>';
+    $output.='<section class="bdy2-m-sec clearfix">';
+    $output.='<div class="sbdy-ssec">';
+    $output.='<div class="container">';
+    $output.=' <div class="sllder-m-sec">';
+    $output.=' <div class="sslde-p-sec"><div class="sslde-chsec clearfix" id="slider_content_show"></div></div>';
+    $output.='<div class="ssldr-cntrl-sec"><h1>'.get_option("ata_carousel_button_info").'</h1><div class="bbttnsec"><div class="row" id="slider_button_show"></div><div></div>';
+    $output.='</div>';
+    $output.='</div>';
+    $output.='</div>';
+    $output.='</section>';
+    $output.='<div style="display: none" id="cyclic_slider_div">';
+    $args = array(
+        'post_type' => 'slider'
+    );
+    $query = new WP_Query( $args );
+    if(isset($query->posts) && !empty($query->posts)){
+        $c=0;
+        foreach($query->posts as $term_post){
+            $output.='<div class="cyclic_divs" id="slider_no_'.$c.'">';
+            $output.='<div class="slider_content">';
+            $output.='<h1>'.$term_post->post_title.'</h1>';
+            if(has_post_thumbnail($term_post->ID)) {
+                $output .= '<div class="immse-c">' . get_the_post_thumbnail($term_post->ID, 'full', array("class" => "img-responsive")) . '</div>';
+            }
+            $output.=apply_filters('the_content', $term_post->post_content);
+            $output.='</div>';
+            $output.='<div class="slider_button_content">';
+            $output.='<h4>'.get_post_meta($term_post->ID,"_ata_slider_button_heading",true).'</h4>';
+            $output.='<a href="#" class="cyclic_button" data-counting="'.$c.'">'.get_post_meta($term_post->ID,"_ata_slider_button_text",true).'<span>'.get_post_meta($term_post->ID,"_ata_slider_button_small_text",true).'</span></a>';
+            $output.='</div>';
+            $output.='</div>';
+            $c++;
+        }
+    }
+    $output.='</div>';
+    wp_reset_query();
+    return $output;
+}
 
 add_shortcode('customer-area', 'shortcode_customer_area');
 function shortcode_customer_area($atts, $content = null,$shortcodename =""){ 

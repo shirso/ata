@@ -296,5 +296,15 @@ function ata_register_post_type(){
                 'title','thumbnail')
         )
     );
+    register_post_type( 'slider',
+        array(
+            'label' => __('Slider / Carousel','ata'),
+            'public' => false,
+            'show_ui' => true,
+            'show_in_nav_menus' => false,
+            'supports' => array(
+                'title','editor','thumbnail')
+        )
+    );
 }
 add_action('init', 'ata_register_post_type');

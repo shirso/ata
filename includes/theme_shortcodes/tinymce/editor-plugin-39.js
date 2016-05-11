@@ -89,7 +89,8 @@
 				]
 				},
 				{
-					text:'Society Elements', menu:[
+					text:'About-Us Elements', menu:[
+					{text: 'Slider/Carousel', onclick: function() { editor.execCommand( 'cherry_insert_self_immediate', false, 'ata_carousel', { title: 'Carousel' } ); } },
 					{text: 'Full Width Society Block', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'society_block', { title: 'Full Width Society Block' } );}} ,
 					{text: 'Text Block', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'society_text_block', { title: 'Text Block' } ); } } ,
 					{text: 'Toggle Button Row', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'society_button_row', { title: 'Toggle Button Row' } ); } },
