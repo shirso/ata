@@ -104,7 +104,7 @@ function my_theme_register_required_plugins() {
         array(
             'name'                     => 'Black Studio TinyMCE Widget', // The plugin name
             'slug'                     => 'black-studio-tinymce-widget', // The plugin slug (typically the folder name)
-            'source'                   => get_template_directory().'/plugin/required/black-studio-tinymce-widget.2.2.9', // The plugin source
+            'source'                   => get_template_directory().'/plugin/required/black-studio-tinymce-widget.2.2.9.zip', // The plugin source
             'required'                 => true, // If false, the plugin is only 'recommended' instead of required
             'version'                 => '2.2.9', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
             'force_activation'         => true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
