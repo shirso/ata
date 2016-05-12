@@ -138,12 +138,6 @@
 					{text: 'Column 12', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'col-xs-12', { title: 'Column 12' } ); } }
 				]
 				},
-				// Elements menu.
-				{text: 'Other Elements', menu: [
-					
-					{text: 'Team Members', onclick: function() { editor.execCommand( 'cherry_open_dialog', false, 'teams', { title: 'Team Members' } ); } }
-				]},
-				
 				// Misc menu.
 				{text: 'Misc', menu: [
 					{text: 'Span', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'span', { title: 'span' } ); } } ,
