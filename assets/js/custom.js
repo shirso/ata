@@ -249,4 +249,16 @@ $(document).on("change","#ata_regional_contact",function(e){
             $(".display_toggle").not(nextRow).hide("slow");
         });
     });
+    $(document).on("click",".ata_toggle_more_button",function(e){
+        e.preventDefault();
+        var $this = $(this),
+            toggleDiv=$this.prev();
+        $(toggleDiv).slideToggle('slow');
+        $this.toggleClass('ata_show');
+        if ($this.hasClass('ata_show')) {
+            $this.text(ata_data.less_text+'...');
+        } else {
+            $this.text(ata_data.more_text+'...');
+        }
+    });
 });

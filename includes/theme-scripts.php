@@ -6,7 +6,7 @@ function university_script(){
        wp_enqueue_script('blockUI', get_bloginfo('template_url').'/assets/js/jquery.blockUI.min.js',array('jquery'),'1.0.1',true);
        wp_enqueue_script('fabric_js', get_bloginfo('template_url').'/assets/js/fabric.js',array('jquery'),'1.0.1',true);
        wp_register_script('custom', get_bloginfo('template_url').'/assets/js/custom.js',array('jquery'),'1.0.1',true);
-       wp_localize_script('custom','ata_data',array('ajaxurl'=> admin_url('admin-ajax.php')));
+       wp_localize_script('custom','ata_data',array('ajaxurl'=> admin_url('admin-ajax.php'),"more_text"=>__("More","ata"),"less_text"=>"Less"));
        wp_enqueue_script('custom');
     }
 }

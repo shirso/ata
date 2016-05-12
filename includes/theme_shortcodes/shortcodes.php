@@ -286,7 +286,13 @@ function shortcode_ata_carousel($atts, $content = null,$shortcodename =""){
             if(has_post_thumbnail($term_post->ID)) {
                 $output .= '<div class="immse-c">' . get_the_post_thumbnail($term_post->ID, 'full', array("class" => "img-responsive")) . '</div>';
             }
-            $output.=apply_filters('the_content', $term_post->post_content);
+           // $output.=apply_filters('the_content', $term_post->post_content);
+            $content_arr = get_extended ( $term_post->post_content );
+            $output.=apply_filters('the_content', $content_arr["main"]);
+            if(isset($content_arr["extended"]) && !empty($content_arr["extended"])){
+                $output.='<section class="ata_more_div">'.apply_filters('the_content', $content_arr["extended"]).'</section>';
+                $output.='<a class="rdm-r ata_toggle_more_button" href="#">'.__("More","ata").'...</a>';
+            }
             $output.='</div>';
             $output.='<div class="slider_button_content">';
             $output.='<h4>'.get_post_meta($term_post->ID,"_ata_slider_button_heading",true).'</h4>';

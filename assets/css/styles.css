@@ -2458,3 +2458,8 @@ hr.bdr2 {
   background: #fff !important;
   color: #41506B !important;
 }
+
+/* line 1215, ../sass/_normalize.scss */
+.ata_more_div {
+  display: none;
+}
