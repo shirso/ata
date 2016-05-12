@@ -60,7 +60,6 @@
     require_once $customise_path . 'function-customs.php'; //Custom functions
     require_once $customise_path . 'meta-quickedit.php';  //Meta Quick Edit functions
     require_once $customise_path . 'theme-customization.php';//theme customization
-    require_once $includes_path . 'wp_bootstrap_navwalker.php';//theme customization
     
    
     /**

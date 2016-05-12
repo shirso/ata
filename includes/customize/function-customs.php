@@ -1,7 +1,7 @@
 <?php
 
 function dashboard_footer_custom() {
-    echo 'universitystudentmovers';
+    echo 'ata-dag';
     }
 
 add_filter('admin_footer_text', 'dashboard_footer_custom');

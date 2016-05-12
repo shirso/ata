@@ -41,66 +41,66 @@ function my_theme_register_required_plugins() {
      * If the source is NOT from the .org repo, then source is also required.
      */
     $plugins = array(
-        array(
-            'name'                     => 'WP EDITOR WIDGET', // The plugin name
-            'slug'                     => 'wp-editor-widget', // The plugin slug (typically the folder name)
-            'source'                   => get_template_directory().'/plugin/required/wp-editor-widget.zip', // The plugin source
-            'required'                 => true, // If false, the plugin is only 'recommended' instead of required
-            'version'                 => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
-            'force_activation'         => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
-            'force_deactivation'     => true, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
-            'external_url'             => '', // If set, overrides default API URL and points to an external URL
-        ),
-         array(
-            'name'                     => 'WP PAGENAVI', // The plugin name
-            'slug'                     => 'wp-pagenavi', // The plugin slug (typically the folder name)
-            'source'                   => get_template_directory().'/plugin/required/wp-pagenavi.2.85.zip', // The plugin source
-            'required'                 => true, // If false, the plugin is only 'recommended' instead of required
-            'version'                 => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
-            'force_activation'         => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
-            'force_deactivation'     => true, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
-            'external_url'             => '', // If set, overrides default API URL and points to an external URL
-        ),
-           array(
-            'name'                     => 'CONTACT FORM7', // The plugin name
-            'slug'                     => 'contact-form-7', // The plugin slug (typically the folder name)
-            'source'                   => get_template_directory().'/plugin/required/contact-form-7.3.9.1.zip', // The plugin source
-            'required'                 => true, // If false, the plugin is only 'recommended' instead of required
-            'version'                 => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
-            'force_activation'         => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
-            'force_deactivation'     => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
-            'external_url'             => '', // If set, overrides default API URL and points to an external URL
-        ),
-           array(
-            'name'                     => 'BOOTSTRAP 3 SHORTCODES', // The plugin name
-            'slug'                     => 'bootstrap-3-shortcodes', // The plugin slug (typically the folder name)
-            'source'                   => get_template_directory().'/plugin/required/bootstrap-3-shortcodes.3.2.3.zip', // The plugin source
-            'required'                 => true, // If false, the plugin is only 'recommended' instead of required
-            'version'                 => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
-            'force_activation'         => true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
-            'force_deactivation'     => true, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
-            'external_url'             => '', // If set, overrides default API URL and points to an external URL
-        ),
-           array(
-            'name'                     => 'DISQUS COMMENT SYSTEM', // The plugin name
-            'slug'                     => 'disqus-comment-system', // The plugin slug (typically the folder name)
-            'source'                   => get_template_directory().'/plugin/required/disqus-comment-system.2.77.zip', // The plugin source
-            'required'                 => true, // If false, the plugin is only 'recommended' instead of required
-            'version'                 => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
-            'force_activation'         => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
-            'force_deactivation'     => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
-            'external_url'             => '', // If set, overrides default API URL and points to an external URL
-        ),
-        array(
-            'name'                     => 'DISQUS COMMENT SYSTEM', // The plugin name
-            'slug'                     => 'facebook-like-box-responsive', // The plugin slug (typically the folder name)
-            'source'                   => get_template_directory().'/plugin/required/facebook-like-box-responsive.zip', // The plugin source
-            'required'                 => true, // If false, the plugin is only 'recommended' instead of required
-            'version'                 => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
-            'force_activation'         => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
-            'force_deactivation'     => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
-            'external_url'             => '', // If set, overrides default API URL and points to an external URL
-        ),
+//        array(
+//            'name'                     => 'WP EDITOR WIDGET', // The plugin name
+//            'slug'                     => 'wp-editor-widget', // The plugin slug (typically the folder name)
+//            'source'                   => get_template_directory().'/plugin/required/wp-editor-widget.zip', // The plugin source
+//            'required'                 => true, // If false, the plugin is only 'recommended' instead of required
+//            'version'                 => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+//            'force_activation'         => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
+//            'force_deactivation'     => true, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
+//            'external_url'             => '', // If set, overrides default API URL and points to an external URL
+//        ),
+//         array(
+//            'name'                     => 'WP PAGENAVI', // The plugin name
+//            'slug'                     => 'wp-pagenavi', // The plugin slug (typically the folder name)
+//            'source'                   => get_template_directory().'/plugin/required/wp-pagenavi.2.85.zip', // The plugin source
+//            'required'                 => true, // If false, the plugin is only 'recommended' instead of required
+//            'version'                 => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+//            'force_activation'         => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
+//            'force_deactivation'     => true, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
+//            'external_url'             => '', // If set, overrides default API URL and points to an external URL
+//        ),
+//           array(
+//            'name'                     => 'CONTACT FORM7', // The plugin name
+//            'slug'                     => 'contact-form-7', // The plugin slug (typically the folder name)
+//            'source'                   => get_template_directory().'/plugin/required/contact-form-7.3.9.1.zip', // The plugin source
+//            'required'                 => true, // If false, the plugin is only 'recommended' instead of required
+//            'version'                 => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+//            'force_activation'         => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
+//            'force_deactivation'     => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
+//            'external_url'             => '', // If set, overrides default API URL and points to an external URL
+//        ),
+//           array(
+//            'name'                     => 'BOOTSTRAP 3 SHORTCODES', // The plugin name
+//            'slug'                     => 'bootstrap-3-shortcodes', // The plugin slug (typically the folder name)
+//            'source'                   => get_template_directory().'/plugin/required/bootstrap-3-shortcodes.3.2.3.zip', // The plugin source
+//            'required'                 => true, // If false, the plugin is only 'recommended' instead of required
+//            'version'                 => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+//            'force_activation'         => true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
+//            'force_deactivation'     => true, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
+//            'external_url'             => '', // If set, overrides default API URL and points to an external URL
+//        ),
+//           array(
+//            'name'                     => 'DISQUS COMMENT SYSTEM', // The plugin name
+//            'slug'                     => 'disqus-comment-system', // The plugin slug (typically the folder name)
+//            'source'                   => get_template_directory().'/plugin/required/disqus-comment-system.2.77.zip', // The plugin source
+//            'required'                 => true, // If false, the plugin is only 'recommended' instead of required
+//            'version'                 => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+//            'force_activation'         => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
+//            'force_deactivation'     => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
+//            'external_url'             => '', // If set, overrides default API URL and points to an external URL
+//        ),
+//        array(
+//            'name'                     => 'DISQUS COMMENT SYSTEM', // The plugin name
+//            'slug'                     => 'facebook-like-box-responsive', // The plugin slug (typically the folder name)
+//            'source'                   => get_template_directory().'/plugin/required/facebook-like-box-responsive.zip', // The plugin source
+//            'required'                 => true, // If false, the plugin is only 'recommended' instead of required
+//            'version'                 => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+//            'force_activation'         => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
+//            'force_deactivation'     => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
+//            'external_url'             => '', // If set, overrides default API URL and points to an external URL
+//        ),
     );
 
     // Change this to your theme text domain, used for internationalising strings
