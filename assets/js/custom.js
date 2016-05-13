@@ -61,13 +61,7 @@ jQuery(function($){
             $(this).find("ul").slideToggle();
         });
 
-        $(".nbartgl").click(function () {
-            if (windowWidth < 768) {
-                $(this).toggleClass("shnbtn");
-                $(".hedlnk-sec").toggleClass("fl");
-                $(".navbar-collapse").toggleClass("fl2");
-            }
-        })
+
         $(window).bind('scroll', function () {
             if ($(window).scrollTop() > 50) {
                 $('.pg_header .lg-sec').addClass('lgsrl');
@@ -99,14 +93,14 @@ jQuery(function($){
     });
     $(window).on( 'resize', function () {
         windowWidth=$(window).width();
-        $(".nbartgl").click(function () {
-            if (windowWidth < 768) {
-                $(this).toggleClass("shnbtn");
-                $(".hedlnk-sec").toggleClass("fl");
-                $(".navbar-collapse").toggleClass("fl2");
-            }
-        })
     });
+    $(".nbartgl").click(function () {
+        if (windowWidth < 768) {
+            $(this).toggleClass("shnbtn");
+            $(".hedlnk-sec").toggleClass("fl");
+            $(".navbar-collapse").toggleClass("fl2");
+        }
+    })
     $(window).load(function(){
         if(typeof region_map!="undefined"){
             var canvas = $('#ata_region_map').children('canvas').get(0);

@@ -43,9 +43,10 @@ jQuery(function($){
             });
 
              design.add(imageInstance);
+             design.add(pinimageInstance);
 
-            setTimeout(function(){
-                design.add(pinimageInstance);
+          //  setTimeout(function(){
+
                 $.each(ata_all_positions,function(k,v){
                     var dotimageInstance= new fabric.Image(document.getElementById('ata_dotImage'), {
                         top: parseInt(v.y)+26,
@@ -64,8 +65,9 @@ jQuery(function($){
                     });
                     design.add(dotimageInstance);
                 });
+            design.renderAll();
 
-            },2000);
+           // },2000);
 
             design.on({
                 'object:moving': function(opts) {
