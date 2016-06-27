@@ -71,6 +71,7 @@
 			menu: [
 				{text: 'Home Page Elements', menu: [
 					{text: 'Banner', onclick: function() { editor.execCommand( 'cherry_insert_self_immediate', false, 'banner', { title: 'banner' } ); } },
+					{text: 'Home Page Container', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'home_page_container', { title: 'home_page_container' } ); } } ,
 				]},
                 
 				 {
