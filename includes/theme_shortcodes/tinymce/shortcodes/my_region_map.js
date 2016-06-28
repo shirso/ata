@@ -1,1 +1,1 @@
-frameworkShortcodeAtts={    attributes:[        {            label:"Heading",            id:"heading"        }    ],    defaultContent:"",    shortcode:"region_map"};
+frameworkShortcodeAtts={    attributes:[        {            label:"Heading",            id:"heading",        }    ],    defaultContent:"",    shortcode:"region_map"};

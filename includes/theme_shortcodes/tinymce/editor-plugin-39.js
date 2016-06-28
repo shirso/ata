@@ -15,7 +15,7 @@
 			b=jQuery(window).height();
 			f=720<f?720:f;
 			f-=80;
-			b-=84;
+			b-=120;
 
 			tb_show( "Insert ["+ v +"] shortcode", "#TB_inline?width="+f+"&height="+b+"&inlineId=dialog" );
 		});
@@ -72,6 +72,7 @@
 				{text: 'Home Page Elements', menu: [
 					{text: 'Banner', onclick: function() { editor.execCommand( 'cherry_insert_self_immediate', false, 'banner', { title: 'banner' } ); } },
 					{text: 'Home Page Container', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'home_page_container', { title: 'home_page_container' } ); } } ,
+					{text: 'Grid Item', onclick: function() { editor.execCommand( 'cherry_open_dialog', false, 'grid', { title: 'Grid Item' } ); } } ,
 				]},
                 
 				 {
