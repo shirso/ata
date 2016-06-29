@@ -34,7 +34,7 @@ jQuery(function($){
         $(".pg_header .navbar-nav>li,.pg_header_2 .navbar-nav>li").click(function (e) {
             if (windowWidth > 768) {
                 $(this).find('.d-down').slideDown();
-            }cd
+            }
             else { $(this).find('.d-down').slideToggle(); }
         });
 
