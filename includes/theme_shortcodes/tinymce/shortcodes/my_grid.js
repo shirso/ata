@@ -8,9 +8,20 @@ frameworkShortcodeAtts={
             help:"Heading of the grid item (Bold Text)"
         },
         {
-            label:"Date Field",
+            label:"SubHeading",
+            id:"sub_heading",
+            help:"Small Text under Heading"
+        },
+        {
+            label:"Small Text",
+            id:"small_text",
+            help:"Small Text above heading with Date"
+        },
+
+        {
+            label:"Date",
             id:"date_field",
-            help:"Small Date above Heading(Use Other text also)"
+            help:"Small Date above Heading"
         },
         {
             label:"Yellow Box Main Text",
@@ -27,11 +38,17 @@ frameworkShortcodeAtts={
             label:"Grid Type",
             id:"type",
             controlType:"select-control",
-            selectValues:['no-image', 'full-image', 'half-image'],
-            selectTexts:['No Image', 'Full Image', 'Half Image'],
-            defaultValue: 'no-image',
-            defaultText: 'No Image',
+            selectValues:['no-image-grey','no-image-blue', 'full-image', 'half-image','full-image-no-gap'],
+            selectTexts:['No Image Grey Background','No Image Blue Background', 'Full Image', 'Half Image','Full Image with No Gap'],
+            defaultValue: 'no-image-grey',
+            defaultText: 'No Image Grey Background',
             help:"Choose Appropriate Grid Type"
+        },
+        {
+          label:"Image",
+          id:"image",
+          controlType:"upload-control",
+          help:"Choose Image for Background or Top of Content"
         },
         {
             label:"Content",

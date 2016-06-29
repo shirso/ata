@@ -2524,3 +2524,7 @@ hr.bdr2 {
 .ata_more_div {
   display: none;
 }
+
+.bdy2-m-sec p a{color:#022f84;}
+.bdy2-m-sec p a:hover{color:#6f88b7;}
+.not_found_p{ text-align:center; margin-bottom:100px!important;}

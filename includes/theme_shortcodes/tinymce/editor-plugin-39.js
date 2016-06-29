@@ -73,6 +73,7 @@
 					{text: 'Banner', onclick: function() { editor.execCommand( 'cherry_insert_self_immediate', false, 'banner', { title: 'banner' } ); } },
 					{text: 'Home Page Container', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'home_page_container', { title: 'home_page_container' } ); } } ,
 					{text: 'Grid Item', onclick: function() { editor.execCommand( 'cherry_open_dialog', false, 'grid', { title: 'Grid Item' } ); } } ,
+					{text: 'Calendar', onclick: function() { editor.execCommand( 'cherry_open_dialog', false, 'calendar_widget', { title: 'Calendar' } ); } } ,
 				]},
                 
 				 {
