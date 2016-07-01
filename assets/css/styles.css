@@ -93,6 +93,23 @@ body {
   font-family: 'Open Sans', sans-serif !important;
 }
 
+h2,h3,h4,h5,h6{color:#292f3d;}
+.bdy2-m-sec h1{text-align:left;line-height: 33px;}
+.bdy2-m-sec h2{font-size:28px;font-weight:800;margin-bottom:25px;line-height: 33px;}
+.bdy2-m-sec h3{font-size:20px;font-weight:800;margin-bottom:20px;line-height: 33px;}
+.bdy2-m-sec h4{font-size:18px;font-weight:800;margin-bottom:15px; line-height: 30px;}
+.bdy2-m-sec h5{font-size:15px; font-weight:800;margin-bottom:15px;line-height: 24px;}
+.bdy2-m-sec h6{font-size:12px; font-weight:800;margin-bottom:15px;line-height: 18px;}
+
+.bdy2-m-sec ul{display:inline-block; margin-bottom:15px;}
+.bdy2-m-sec ul li{display:block; padding:10px; font-size:16px; color:#53617b;}
+.bdy2-m-sec ul li a{display:block:  font-size:14px; color:#53617b;}
+
+.bdy2-m-sec ol{display:inline-block; margin-bottom:15px;}
+.bdy2-m-sec ol li{display:block; padding:5px; font-size:14px; color:#53617b;}
+.bdy2-m-sec ol li a{display:block:  font-size:14px; color:#53617b;}
+.bdy2-m-sec img{max-width:100%; height:auto;}
+
 /* line 15, ../sass/_normalize.scss */
 a:hover, a:focus {
   text-decoration: none !important;
@@ -108,6 +125,7 @@ h1 {
 a {
   color: #fff;
 }
+
 
 /* line 18, ../sass/_normalize.scss */
 p {
@@ -144,6 +162,35 @@ p {
   margin-left: 35px;
 }
 
+@media (max-width: 767px) {
+/* line 27, ../sass/_normalize.scss */
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* line 34, ../sass/_normalize.scss */
+.alignleft {
+  clear: both;
+  display: inline-block;
+  float: none;
+  margin-right: 35px;
+}
+
+/* line 40, ../sass/_normalize.scss */
+.alignright {
+  clear: both;
+  display: inline-block;
+  float: none;
+  margin-right: 35px;
+  margin-left: 0;
+}
+}
+
+.bxslider li{padding:0px!important;}
 /* line 47, ../sass/_normalize.scss */
 .pg_header, .pg_header_2 {
   position: fixed;
@@ -1397,8 +1444,8 @@ hr.bdr2 {
 }
 
 /* line 658, ../sass/_normalize.scss */
-.imd-sec img {
-  width: auto;
+.imd-sec .ata_featured_image {
+  width: 50%;
   margin-bottom: 20px;
   margin-right: 30px;
   float: left;
@@ -2165,7 +2212,7 @@ hr.bdr2 {
   }
 
   /* line 1078, ../sass/_normalize.scss */
-  .imd-sec img {
+  .imd-sec .ata_featured_image  {
     width: 50%;
   }
 
@@ -2362,7 +2409,7 @@ hr.bdr2 {
   }
 
   /* line 1185, ../sass/_normalize.scss */
-  .imd-sec img {
+  .imd-sec .ata_featured_image {
     width: 100%;
   }
 
@@ -2452,55 +2499,72 @@ hr.bdr2 {
   color: #fff;
 }
 
+.ata_widgets{margin-bottom:20px;}
+.ata_widgets ul li a{color:#ececec;line-height: 22px;}
+.ata_widgets ul li a:hover{color:#fff;}
+
+.ata_widgets input[type="text"]{padding:5px;}
+.ata_widgets input[type="submit"]{padding:10px 20px; font-size:14px; color:#8494ad; border:none; position:relative;}
+.ata_widgets input[type="submit"]:after{
+position:absolute;
+    content: "\f002";
+	left:0; top:0;
+	color:#000;
+	}
+
 /* line 1207, ../sass/_normalize.scss */
-.calandar-m-sec {
+.calandar-m-sec ,.ata_widgets{
   background: #53617e;
   padding: 40px 25px;
 }
 /* line 1208, ../sass/_normalize.scss */
-.calandar-m-sec h1 {
+.ata_widgets h3,.calandar-m-sec h1 {
   color: #fff;
   font-size: 28px;
   font-family: "Open Sans", sans-serif;
   margin-bottom: 60px;
 }
+.ata_widgets h3{margin-bottom: 36px; font-weight:400!important;}
 /* line 1209, ../sass/_normalize.scss */
-.calandar-m-sec #wp-calendar {
+ #wp-calendar {
   width: 100%;
 }
 /* line 1210, ../sass/_normalize.scss */
-.calandar-m-sec #wp-calendar td {
+ #wp-calendar td {
   padding: 10px 0;
   font-size: 18px;
 }
+.ata_widgets #wp-calendar td {
+    padding: 7px 0;
+	}
 /* line 1213, ../sass/_normalize.scss */
-.calandar-m-sec #wp-calendar caption {
+ #wp-calendar caption {
   color: #fff;
   margin-bottom: 20px !important;
   font-size: 20px;
 }
 /* line 1214, ../sass/_normalize.scss */
-.calandar-m-sec #wp-calendar thead {
+#wp-calendar thead {
   color: #fff;
 }
 /* line 1214, ../sass/_normalize.scss */
-.calandar-m-sec #wp-calendar thead th {
+#wp-calendar thead th {
   font-size: 20px;
 }
 /* line 1215, ../sass/_normalize.scss */
-.calandar-m-sec #wp-calendar tbody {
+ #wp-calendar tbody {
   color: #8494ad;
 }
 /* line 1216, ../sass/_normalize.scss */
-.calandar-m-sec #wp-calendar tbody td a {
+ #wp-calendar tbody td a {
   color: #fff;
 }
 /* line 1218, ../sass/_normalize.scss */
-.calandar-m-sec #wp-calendar tfoot {
+ #wp-calendar tfoot {
   color: #8494ad;
 }
 /* line 1219, ../sass/_normalize.scss */
-.calandar-m-sec #wp-calendar tfoot #prev a {
+ #wp-calendar tfoot #prev a {
   color: #fff;
 }
 
@@ -2528,3 +2592,150 @@ hr.bdr2 {
 .bdy2-m-sec p a{color:#022f84;}
 .bdy2-m-sec p a:hover{color:#6f88b7;}
 .not_found_p{ text-align:center; margin-bottom:100px!important;}
+
+.checkbox {
+  padding-left: 20px; }
+.checkbox label {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+    padding-left: 5px; }
+.checkbox label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  left: 0;
+  margin-left: -20px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  background-color: #fff;
+  -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+      transition: border 0.15s ease-in-out, color 0.15s ease-in-out; }
+.checkbox label::after {
+  display: inline-block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 0;
+  margin-left: -20px;
+  padding-left: 3px;
+  padding-top: 1px;
+  font-size: 11px;
+      color: #555555; }
+.checkbox input[type="checkbox"] {
+  opacity: 0;
+    z-index: 1; }
+.checkbox input[type="checkbox"]:focus + label::before{
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px; }
+.checkbox input[type="checkbox"]:checked + label::after {
+  font-family: "FontAwesome";
+  content: "\f00c";}
+.checkbox input[type="checkbox"]:indeterminate + label::after{
+  display: block;
+  content: "";
+  width: 10px;
+  height: 3px;
+  background-color: #555555;
+  border-radius: 2px;
+  margin-left: -16.5px;
+  margin-top: 7px;
+}
+.checkbox input[type="checkbox"]:disabled + label{
+      opacity: 0.65; }
+.checkbox input[type="checkbox"]:disabled + label::before{
+  background-color: #eeeeee;
+        cursor: not-allowed; }
+.checkbox.checkbox-circle label::before {
+    border-radius: 50%; }
+.checkbox.checkbox-inline {
+    margin-top: 0; }
+
+.checkbox-primary input[type="checkbox"]:checked + label::before{
+  background-color: #337ab7;
+  border-color: #337ab7; }
+.checkbox-primary input[type="checkbox"]:checked + label::after {
+  color: #fff; }
+
+.checkbox-danger input[type="checkbox"]:checked + label::before{
+  background-color: #d9534f;
+  border-color: #d9534f; }
+.checkbox-danger input[type="checkbox"]:checked + label::after{
+  color: #fff; }
+
+.checkbox-info input[type="checkbox"]:checked + label::before{
+  background-color: #d69a25;
+  border-color: #fff; }
+.checkbox-info input[type="checkbox"]:checked + label::after{
+  color: #fff; }
+
+.checkbox-warning input[type="checkbox"]:checked + label::before{
+  background-color: #f0ad4e;
+  border-color: #f0ad4e; }
+.checkbox-warning input[type="checkbox"]:checked + label::after{
+  color: #fff; }
+
+.checkbox-success input[type="checkbox"]:checked + label::before{
+  background-color: #5cb85c;
+  border-color: #5cb85c; }
+.checkbox-success input[type="checkbox"]:checked + label::after{
+  color: #fff;}
+
+.checkbox-primary input[type="checkbox"]:indeterminate + label::before{
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+
+.checkbox-primary input[type="checkbox"]:indeterminate + label::after {
+  background-color: #fff;
+}
+
+.checkbox-danger input[type="checkbox"]:indeterminate + label::before{
+  background-color: #d9534f;
+  border-color: #d9534f;
+}
+
+.checkbox-danger input[type="checkbox"]:indeterminate + label::after{
+  background-color: #fff;
+}
+
+.checkbox-info input[type="checkbox"]:indeterminate + label::before{
+  background-color: #5bc0de;
+  border-color: #5bc0de;
+}
+
+.checkbox-info input[type="checkbox"]:indeterminate + label::after{
+  background-color: #fff;
+}
+
+.checkbox-warning input[type="checkbox"]:indeterminate + label::before{
+  background-color: #f0ad4e;
+  border-color: #f0ad4e;
+}
+
+.checkbox-warning input[type="checkbox"]:indeterminate + label::after {
+  background-color: #fff;
+}
+
+.checkbox-success input[type="checkbox"]:indeterminate + label::before{
+  background-color: #5cb85c;
+  border-color: #5cb85c;
+}
+
+.checkbox-success input[type="checkbox"]:indeterminate + label::after{
+  background-color: #fff;
+}
+.licheak{margin-left: 30px;}
+.licheak .checkbox + .checkbox{margin-top:0px!important;}
+.licheak label{
+	padding-left:5px!important;
+	color:#fff;
+	-webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;}
+.licheak label:hover{padding-left:7px!important;}
