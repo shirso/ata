@@ -2503,7 +2503,7 @@ hr.bdr2 {
 .ata_widgets ul li a{color:#ececec;line-height: 22px;}
 .ata_widgets ul li a:hover{color:#fff;}
 
-.ata_widgets input[type="text"]{padding:5px;}
+.ata_widgets input[type="text"]{padding:5px 10px; border:none;}
 .ata_widgets input[type="submit"]{padding:10px 20px; font-size:14px; color:#8494ad; border:none; position:relative;}
 .ata_widgets input[type="submit"]:after{
 position:absolute;
@@ -2599,13 +2599,16 @@ position:absolute;
   display: inline-block;
   vertical-align: middle;
   position: relative;
-    padding-left: 5px; }
+    padding-left: 5px; 
+	font-size:14px;
+	}
 .checkbox label::before {
   content: "";
   display: inline-block;
   position: absolute;
   width: 17px;
   height: 17px;
+  top: -1px;
   left: 0;
   margin-left: -20px;
   border: 1px solid #cccccc;
