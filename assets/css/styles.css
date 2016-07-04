@@ -600,7 +600,7 @@ p {
 .flltrr-msec .flt-bxx ul li a {
   display: block;
   padding: 10px 10px;
-  font-size: 14px;
+  font-size: 15px;
   background: none;
   color: #fff;
   font-weight: 400;
@@ -609,11 +609,11 @@ p {
   -o-transition: all 0.2s ease 0s;
   transition: all 0.2s ease 0s;
 }
-/* line 279, ../sass/_normalize.scss */
+/* line 279, ../sass/_normalize.scss 
 .flltrr-msec .flt-bxx ul li a:hover {
   padding-left: 13px;
   background: #996602;
-}
+}*/
 /* line 283, ../sass/_normalize.scss */
 .flltrr-msec .flt-bxx a {
   display: block;
@@ -2039,7 +2039,7 @@ hr.bdr2 {
   top: 0;
   right: 0;
   background: #996602;
-  padding: 8px 20px 5px 20px;
+  padding: 8px 20px 10px 20px;
   text-align: center;
 }
 /* line 1001, ../sass/_normalize.scss */
@@ -2049,7 +2049,6 @@ hr.bdr2 {
   line-height: 12px;
   font-weight: 400;
   color: #fff;
-  text-transform: uppercase;
   margin: 0;
 }
 /* line 1010, ../sass/_normalize.scss */
@@ -2742,3 +2741,4 @@ position:absolute;
     -moz-transition: all 0.2s ease 0s;
     transition: all 0.2s ease 0s;}
 .licheak label:hover{padding-left:7px!important;}
+.post_loading_loader{opacity: 0.6;}

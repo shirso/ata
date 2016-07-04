@@ -1,107 +1,1 @@
-<?php
-add_action('wp_ajax_my_action', 'my_action_callback');
-add_action( 'wp_ajax_nopriv_my_action', 'my_action_callback' );
-add_action('wp_ajax_get_region_data', 'ata_get_region_data');
-add_action( 'wp_ajax_nopriv_get_region_data', 'ata_get_region_data' );
-add_action('wp_ajax_get_regional_contact_data', 'ata_get_regional_contact_data');
-add_action( 'wp_ajax_nopriv_get_regional_contact_data', 'ata_get_regional_contact_data' );
-add_action('wp_ajax_get_society_data', 'ata_get_society_data');
-add_action( 'wp_ajax_nopriv_get_society_data', 'ata_get_society_data' );
-function my_action_callback() {
-        
-        global $wpdb; // this is how you get access to the database
-
-        $whatever =  $_POST['whatever'] ;
-
-            echo do_shortcode('[gallery ids="'.$whatever.'"]');
-
-        die(); // this is required to return a proper result
-    }
-    
-add_action('wp_ajax_my_carousel_load', 'my_carousel_load_callback'); 
-add_action( 'wp_ajax_nopriv_fetchdetails', 'my_carousel_load_callback' );
-function my_carousel_load_callback() {
-        
-        global $wpdb; // this is how you get access to the database
-
-        $data =  $_POST['dataloads'];
-         
-            $html = do_shortcode('[carousel ctype="'.$data['ctype'].'"  num="'.$data['num'].'" slidenum="'.$data['slidenum'].'" type="'.$data['type'].'" post_id="'.$data['post_id'].'"]');
-           // print_r($data); 
-           //print_r('[carousel ctype="'.$data['ctype'].'"  num="'.$data['num'].'" slidenum="'.$data['slidenum'].'" type="'.$data['type'].'" post_id="'.$data['post_id'].'"]');
-           echo $html;
-           
-        die(); // this is required to return a proper result
-    }
-function ata_get_region_data(){
-    $regionId=absint($_POST["regionId"]);
-    $content_post = get_post($regionId);
-    $content = $content_post->post_content;
-    $content = apply_filters('the_content', $content);
-    echo $content;
-    exit;
-}
-function ata_get_regional_contact_data(){
-   $termId=absint($_POST["termId"]);
-    $args = array(
-        'post_type' => 'forum',
-        'tax_query' => array(
-            array(
-                'taxonomy' => 'forum_cat',
-                'field' => 'id',
-                'terms' => $termId
-            )
-        )
-    );
-    $query = new WP_Query( $args );
-    $html='';
-    if(isset($query->posts) && !empty($query->posts)){
-        $c=0;
-        foreach($query->posts as $term_post){
-          $extraClass=$c==0 ? "mmato" : "";
-          $html.='<div class="img-bxx '.$extraClass.' clearfix">';
-          $html.=get_the_post_thumbnail($term_post->ID,'full',array('class'=>'img-responsive'));
-          $html.='<div class="intxt-sc">';
-          $html.=apply_filters('the_content', $term_post->post_content);
-          $html.='</div>';
-          $html.='</div>';
-            $c++;
-        }
-
-    }
-    wp_reset_query();
-    echo $html;
-    exit;
-}
-function ata_get_society_data(){
-    $category=sanitize_text_field($_POST["category"]);
-    $args = array(
-        'post_type' => 'society',
-        'tax_query' => array(
-            array(
-                'taxonomy' => 'society_cat',
-                'field' => 'slug',
-                'terms' => $category
-            )
-        )
-    );
-    $query = new WP_Query( $args );
-    $html='';
-    $html.='<div class="sull-mssec">';
-    $html.='<div class="bxxpr-sec">';
-    if(isset($query->posts) && !empty($query->posts)){
-        foreach($query->posts as $term_post){
-            $html.='<div class="bxxl-sec">';
-            $html.=get_the_post_thumbnail($term_post->ID,'full',array('class'=>'img-responsive'));
-            $html.='<div class="bxtx-sec">';
-            $html.=apply_filters('the_content', $term_post->post_content);
-            $html.='</div>';
-            $html.='</div>';
-        }
-    }
-    $html.='</div>';
-    $html.='</div>';
-    wp_reset_query();
-    echo $html;
-    exit;
-}
+<?phpadd_action('wp_ajax_my_action', 'my_action_callback');add_action( 'wp_ajax_nopriv_my_action', 'my_action_callback' );add_action('wp_ajax_get_region_data', 'ata_get_region_data');add_action( 'wp_ajax_nopriv_get_region_data', 'ata_get_region_data' );add_action('wp_ajax_get_regional_contact_data', 'ata_get_regional_contact_data');add_action( 'wp_ajax_nopriv_get_regional_contact_data', 'ata_get_regional_contact_data' );add_action('wp_ajax_get_society_data', 'ata_get_society_data');add_action( 'wp_ajax_nopriv_get_society_data', 'ata_get_society_data' );add_action('wp_ajax_get_more_posts', 'get_more_posts');add_action( 'wp_ajax_get_more_posts', 'get_more_posts' );function get_more_posts(){   $posts_per_page=!empty(get_option("posts_per_page"))?get_option("posts_per_page"):5;    $offset  = (isset($_POST['offset'])) ? $_POST['offset'] : 0;    $args = array(        'post_type'      => 'post',        'posts_per_page' => $posts_per_page,        'offset'          => $offset,    );    $loop = new WP_Query($args);    $out = '';    if (!empty($loop->get_posts())) {        $all_posts=$loop->get_posts();        foreach ($all_posts as $postItem) {            $loop -> the_post();            $post_format=get_post_meta($postItem->ID,"_ata_post_format",true);            $extraClass=$post_format=="half_background" ? "nobgpos": "";            $classes="";            if(empty($post_format) || $post_format=="full_background"){$classes="im-tx-bxbg";}            if($post_format=="half_background"){$classes="im-tx-bx dblu";}            if(!has_post_thumbnail($postItem->ID)){$classes="im-tx-bx skblu";}            $out.='<div class="grid-item '.$extraClass.'">';            if(has_post_thumbnail($postItem->ID)){ $out.=get_the_post_thumbnail($postItem->ID,"full",array("class"=>"img-responsive"));}            $out.=' <div class="'.$classes.'">';            $out.='<p class="sml-p">'.get_post_meta($postItem->ID,"_ata_blog_small_text",true).'<span class="smltx">'.get_the_date('d. F Y').'</span></p>';            $out.='<h5>'.get_the_title($postItem->ID).'</h5>';            $out.='<p>';            if( strpos( get_the_content($postItem->ID,null, false), 'more-link' ) === false ) {                $out.=my_string_limit_words(wp_strip_all_tags(get_the_content($postItem->ID)),50);            }else{                $out.=wp_strip_all_tags(get_the_content($postItem->ID, null, TRUE ));            }            $out.='</p>';            $out.=' <a href="'.get_the_permalink($postItem->ID).'" class="rdm">'.__("More","ata").'..</a>';            $out.=' </div>';            $newness= !empty(get_option( 'ata_new_tag_interval' ))?get_option( 'ata_new_tag_interval' ):7;            $postdate= get_the_time( 'Y-m-d',$postItem->ID );            $postdatestamp= strtotime( $postdate );            if (( time() - ( 60 * 60 * 24 * $newness ) ) < $postdatestamp ) {                $out.='<div class="tpylo-sec">';                $out.='<h5>'.__("New","ata").'</h5>';                $out.=' </div>';            }            $out.=' </div>';        }        wp_reset_postdata();    }    $args_all = array(        'post_type'      => 'post',        'posts_per_page' => -1    );    $all_posts = new WP_Query($args_all);    $count= $all_posts->found_posts;    wp_die(json_encode(array("html"=>$out,"count"=>$count)));    exit;}function my_action_callback() {                global $wpdb; // this is how you get access to the database        $whatever =  $_POST['whatever'] ;            echo do_shortcode('[gallery ids="'.$whatever.'"]');        die(); // this is required to return a proper result    }    add_action('wp_ajax_my_carousel_load', 'my_carousel_load_callback'); add_action( 'wp_ajax_nopriv_fetchdetails', 'my_carousel_load_callback' );function my_carousel_load_callback() {                global $wpdb; // this is how you get access to the database        $data =  $_POST['dataloads'];                     $html = do_shortcode('[carousel ctype="'.$data['ctype'].'"  num="'.$data['num'].'" slidenum="'.$data['slidenum'].'" type="'.$data['type'].'" post_id="'.$data['post_id'].'"]');           // print_r($data);            //print_r('[carousel ctype="'.$data['ctype'].'"  num="'.$data['num'].'" slidenum="'.$data['slidenum'].'" type="'.$data['type'].'" post_id="'.$data['post_id'].'"]');           echo $html;                   die(); // this is required to return a proper result    }function ata_get_region_data(){    $regionId=absint($_POST["regionId"]);    $content_post = get_post($regionId);    $content = $content_post->post_content;    $content = apply_filters('the_content', $content);    echo $content;    exit;}function ata_get_regional_contact_data(){   $termId=absint($_POST["termId"]);    $args = array(        'post_type' => 'forum',        'tax_query' => array(            array(                'taxonomy' => 'forum_cat',                'field' => 'id',                'terms' => $termId            )        )    );    $query = new WP_Query( $args );    $html='';    if(isset($query->posts) && !empty($query->posts)){        $c=0;        foreach($query->posts as $term_post){          $extraClass=$c==0 ? "mmato" : "";          $html.='<div class="img-bxx '.$extraClass.' clearfix">';          $html.=get_the_post_thumbnail($term_post->ID,'full',array('class'=>'img-responsive'));          $html.='<div class="intxt-sc">';          $html.=apply_filters('the_content', $term_post->post_content);          $html.='</div>';          $html.='</div>';            $c++;        }    }    wp_reset_query();    echo $html;    exit;}function ata_get_society_data(){    $category=sanitize_text_field($_POST["category"]);    $args = array(        'post_type' => 'society',        'posts_per_page'   => -1,        'tax_query' => array(            array(                'taxonomy' => 'society_cat',                'field' => 'slug',                'terms' => $category            )        )    );    $query = new WP_Query( $args );    $html='';    $html.='<div class="sull-mssec">';    $html.='<div class="bxxpr-sec">';    if(isset($query->posts) && !empty($query->posts)){        foreach($query->posts as $term_post){            $html.='<div class="bxxl-sec">';            $html.=get_the_post_thumbnail($term_post->ID,'full',array('class'=>'img-responsive'));            $html.='<div class="bxtx-sec">';            $html.=apply_filters('the_content', $term_post->post_content);            $html.='</div>';            $html.='</div>';        }    }    $html.='</div>';    $html.='</div>';    wp_reset_query();    echo $html;    exit;}
