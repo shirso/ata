@@ -11,6 +11,9 @@ jQuery(function($){
         offset = $('#ata_main_content').find('.grid-item').length,
         $loader = $('#ata_load_more_button'),
         first_time_load=true;
+   $content.masonry({
+        itemSelector: '.grid-item'
+    });
     var load_ajax_posts=function(clearData){
         if (!($loader.hasClass('post_loading_loader') || $loader.hasClass('post_no_more_posts'))) {
             if(typeof clearData!="undefined"){
@@ -25,27 +28,35 @@ jQuery(function($){
             $loader.addClass("post_loading_loader");
             $content.block({message: null,
                 overlayCSS: {
-                    background: 'transparent',
+                    background: '#000',
                     opacity: 0.6
                 }
             });
             $.post(ata_data.ajaxurl, data, function(response) {
                 if(typeof clearData!="undefined"){
+                    $content.masonry('destroy');
                     $content.html("");
-
+                    first_time_load=true;
                 }
                 var response=$.parseJSON(response);
                 var $data = $(response.html);
                 var counting=response.count;
-                $content.imagesLoaded(function(){
-                    $content.masonry({
-                        itemSelector: '.grid-item'
-                    });
-                });
+                //$content.imagesLoaded(function(){
+                //    $content.masonry({
+                //        itemSelector: '.grid-item'
+                //    });
+                //});
+                $content.masonry({
+                           itemSelector: '.grid-item'
+                       });
                 if(first_time_load) {
                     $content.prepend($data).imagesLoaded(function () {
+                        //$content.masonry({
+                        //        itemSelector: '.grid-item'
+                        //        });
                         $content.masonry('prepended', $data, true);
                     });
+
                 }else{
                     $content.append($data).imagesLoaded(function () {
                         $content.masonry('appended', $data, true);
@@ -324,7 +335,7 @@ $(document).on("change","#ata_regional_contact",function(e){
         load_ajax_posts();
     });
     $(document).on("change",".filter_checkbox",function(){
-        var val=$(this).val();
+        var val=parseInt($(this).val());
         var type=$(this).data("type");
         switch (type){
             case "category":
@@ -343,5 +354,9 @@ $(document).on("change","#ata_regional_contact",function(e){
                 break;
         }
         load_ajax_posts(true);
+    });
+    $(document).on("click","#ata_back_button",function(e){
+        parent.history.back();
+        return false;
     });
 });

@@ -1087,7 +1087,7 @@ p {
 
 /* line 476, ../sass/_normalize.scss */
 .bxxl-sec .bxtx-sec {
-  padding: 18px 10px;
+  padding: 18px 9px;
 }
 /* line 477, ../sass/_normalize.scss */
 .bxxl-sec .bxtx-sec span {
@@ -2631,10 +2631,9 @@ position:absolute;
 .checkbox input[type="checkbox"] {
   opacity: 0;
     z-index: 1; }
-.checkbox input[type="checkbox"]:focus + label::before{
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-      outline-offset: -2px; }
+.checkbox input[type="checkbox"]:focus{
+ outline:0!important;
+}
 .checkbox input[type="checkbox"]:checked + label::after {
   font-family: "FontAwesome";
   content: "\f00c";}
@@ -2741,4 +2740,17 @@ position:absolute;
     -moz-transition: all 0.2s ease 0s;
     transition: all 0.2s ease 0s;}
 .licheak label:hover{padding-left:7px!important;}
+.bdy-grec .col-xs-4.col-sm-4 .att-btn{margin-bottom:0px;}
 .post_loading_loader{opacity: 0.6;}
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+a, a:visited, a:focus, a:active, a:hover{
+    outline:0 none !important;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
