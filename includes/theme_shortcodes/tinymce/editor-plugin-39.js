@@ -145,6 +145,7 @@
 				{text: 'Misc', menu: [
 					{text: 'Span', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'span', { title: 'span' } ); } } ,
 					{text: 'Button', onclick: function() { editor.execCommand( 'cherry_open_dialog', false, 'button', { title: 'button' } ); } } ,
+					{text: 'Horizontal Line', onclick: function() { editor.execCommand( 'cherry_open_dialog', false, 'hr', { title: 'Horizontal Line' } ); } }
 				]},
 				
 			]
