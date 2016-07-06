@@ -14,17 +14,17 @@ jQuery(function($){
    $content.masonry({
         itemSelector: '.grid-item'
     });
-    var load_ajax_posts=function(clearData){
+    var load_ajax_posts=function(postData,clearData){
         if (!($loader.hasClass('post_loading_loader') || $loader.hasClass('post_no_more_posts'))) {
             if(typeof clearData!="undefined"){
                 offset=0;
             }
-            var data = {
-                'action': 'get_more_posts',
-                'offset': offset,
-                'cat':categories,
-                'tag':tags
-            };
+            //var data = {
+            //    'action': 'get_more_posts',
+            //    'offset': offset,
+            //    'cat':categories,
+            //    'tag':tags
+            //};
             $loader.addClass("post_loading_loader");
             $content.block({message: null,
                 overlayCSS: {
@@ -32,7 +32,7 @@ jQuery(function($){
                     opacity: 0.6
                 }
             });
-            $.post(ata_data.ajaxurl, data, function(response) {
+            $.post(ata_data.ajaxurl, postData, function(response) {
                 if(typeof clearData!="undefined"){
                     $content.masonry('destroy');
                     $content.html("");
@@ -66,6 +66,7 @@ jQuery(function($){
                 $content.unblock();
                 first_time_load=false;
                 $loader.removeClass("post_loading_loader");
+                console.log($('#ata_main_content').find('.grid-item').length);
                 if($('#ata_main_content').find('.grid-item').length >= counting){
                     $loader.parent().hide();
                 }else{
@@ -248,8 +249,14 @@ jQuery(function($){
         $('.grid').masonry({
             itemSelector: '.grid-item'
         });
-
-        load_ajax_posts();
+        if(typeof BlogInfiniteScroll!="undefined") {
+            load_ajax_posts({
+                'action': 'get_more_posts',
+                'offset': offset,
+                'cat':categories,
+                'tag':tags
+            });
+        }
     });
 $(document).on("change","#ata_regional_contact",function(e){
    loadRegionalContactData($(this).val());
@@ -332,7 +339,14 @@ $(document).on("change","#ata_regional_contact",function(e){
     });
     $(document).on("click","#ata_load_more_button",function(e){
         e.preventDefault();
-        load_ajax_posts();
+        if(typeof BlogInfiniteScroll!="undefined" ) {
+            load_ajax_posts({
+                'action': 'get_more_posts',
+                'offset': offset,
+                'cat': categories,
+                'tag': tags
+            });
+        }
     });
     $(document).on("change",".filter_checkbox",function(){
         var val=parseInt($(this).val());
@@ -353,7 +367,15 @@ $(document).on("change","#ata_regional_contact",function(e){
                 }
                 break;
         }
-        load_ajax_posts(true);
+        offset=0;
+        if(typeof BlogInfiniteScroll!="undefined" ) {
+            load_ajax_posts({
+                'action': 'get_more_posts',
+                'offset': offset,
+                'cat':categories,
+                'tag':tags
+            },true);
+        }
     });
     $(document).on("click","#ata_back_button",function(e){
         parent.history.back();
