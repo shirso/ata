@@ -28,7 +28,7 @@ jQuery(function($){
             $loader.addClass("post_loading_loader");
             $content.block({message: null,
                 overlayCSS: {
-                    background: '#000',
+                    background: '#fff',
                     opacity: 0.6
                 }
             });

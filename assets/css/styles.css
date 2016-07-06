@@ -2748,9 +2748,37 @@ position:absolute;
 a, a:visited, a:focus, a:active, a:hover{
     outline:0 none !important;
 }
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-    outline: none;
+input:focus,select:focus,textarea:focus,button:focus {outline: none;}
+.ext-btn>a{position:relative;}
+.post_loading_loader:before{
+	color:#000;
+	position:absolute;
+	content:"";
+	 background-color:#fff;
+	width: 2px;
+    height: 2px;
+    top: 15px;
+    left: 50%;
+    z-index: 1;
+    margin-left: -3px;
+   -webkit-animation:spine 1 linear infinite;
+    -moz-animation:spine 1s linear infinite;
+    animation:spine 1s linear infinite;
 }
+@-moz-keyframes spine { 100% { width:50px;left: 0%; } }
+@-webkit-keyframes spine { 100% { width:50px; left: 0%;} }
+@keyframes spine { 100% { width:100%; left: 0%;}}
+
+.ata_blue_line{background: #05063c;
+    width: 100%;
+    height: 2px;
+    margin-bottom: 12px;}
+
+.ata_brown_line{background: #996602;
+    width: 100%;
+    height: 2px;
+    margin-bottom: 15px;}
+	
+
+
+
