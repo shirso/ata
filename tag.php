@@ -1,44 +1,1 @@
-<?php get_header(); ?>
- <!---------- Content Open ----------->
-  <section class="inner-area">
-    <div class="container">
-        <h2><?php printf( __( 'Tag Archives: %s' ), '<span>' . single_tag_title( '', false ) . '</span>' ); ?></h2>
-        <div class="row">
-            <div class="col-sm-9">  
-                <?php  while(have_posts()){ the_post(); ?>
-                
-                 <div class="blog-con">
-                    <div class="row clearfix">
-                    <?php if(has_post_thumbnail(get_the_ID())){ ?>
-                        <div class="col-sm-3">
-                            <div class="im-div">
-                                  <?php the_post_thumbnail('blog-image',array('class'=>'img-responsive')); ?>
-                            </div>
-                        </div>
-                        <?php }?>
-                        <div class="<?php echo $class=has_post_thumbnail(get_the_ID())? 'col-sm-9':'col-sm-12'; ?>">
-                            <h5><a href="<?php the_permalink(); ?>"> <?php the_title();?></a></h5>
-                            <p>Posted on <a href="#"><?php the_time('F jS, Y') ?></a> by <a href="#"><?php the_author_posts_link() ?> </p>
-                             <?php global $more;    // Declare global $more (before the loop).
-                                              $more = 0;  
-                                                $more = 0;     //s Set (inside the loop) to display content above the more tag.
-                                    the_content(''); 
-                                              ?>
-                           <p>Posted in <a href="#"><?php the_category(', ');?></a> | <a href="<?php the_permalink(); ?>#comment-section">Leave Reply</a></p> 
-                            <div class="readmore">
-                                <a href="<?php the_permalink(); ?>">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <?php } ?>  
-               <?php if(function_exists('wp_pagenavi')) wp_pagenavi(); ?>          
-            </div>
-          <?php get_sidebar('blog'); ?>
-        </div>   
-    </div> 
-</section>
- 
-
-<!---------- Content Close ----------->
-<?php get_footer(); ?>
+<?php get_header(); ?>    <section class="head-en tppp-flt-dv">        <div class="container">            <h1><?php printf( __( 'Tag Archives: %s','ata' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h1>            <hr class="bdr1"/>        </div>    </section>    <section class="bdy-m-sec">        <script type="text/javascript">            var tagPage=true,                tag='<?=get_query_var('tag');?>';        </script>        <div class="container">            <div class="grid" id="ata_main_content">            </div>            <div class="text-center"><div class="ext-btn mrr" style="display: none"><a href="#" id="ata_load_more_button"><?=__("More","ata")?></a></div></div>        </div>    </section><?php get_footer(); ?>

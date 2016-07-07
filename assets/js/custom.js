@@ -66,7 +66,6 @@ jQuery(function($){
                 $content.unblock();
                 first_time_load=false;
                 $loader.removeClass("post_loading_loader");
-                console.log($('#ata_main_content').find('.grid-item').length);
                 if($('#ata_main_content').find('.grid-item').length >= counting){
                     $loader.parent().hide();
                 }else{
@@ -123,7 +122,10 @@ jQuery(function($){
             mode: 'fade',
             captions: true,
             auto: true,
-            speed:2000
+            speed:2000,
+            onSliderLoad: function(){
+                $(".bx-wrapper").css("visibility", "visible");
+            }
         });
         $(".flltrbtn").click(function (e) {
             e.preventDefault();
@@ -257,6 +259,34 @@ jQuery(function($){
                 'tag':tags
             });
         }
+        if(typeof searchPage!="undefined"){
+            load_ajax_posts({
+                'action': 'get_search_results',
+                'offset': offset,
+                'query':searchQuery
+            });
+        }
+        if(typeof categoryPage!="undefined"){
+            load_ajax_posts({
+                'action': 'get_search_results',
+                'offset': offset,
+                'cat':category
+            });
+        }
+        if(typeof tagPage!="undefined"){
+            load_ajax_posts({
+                'action': 'get_search_results',
+                'offset': offset,
+                'tag':tag
+            });
+        }
+        if(typeof datePage!="undefined"){
+            load_ajax_posts({
+                'action': 'get_search_results',
+                'offset': offset,
+                'date':dateArray
+            });
+        }
     });
 $(document).on("change","#ata_regional_contact",function(e){
    loadRegionalContactData($(this).val());
@@ -345,6 +375,34 @@ $(document).on("change","#ata_regional_contact",function(e){
                 'offset': offset,
                 'cat': categories,
                 'tag': tags
+            });
+        }
+        if(typeof searchPage!="undefined"){
+            load_ajax_posts({
+                'action': 'get_search_results',
+                'offset': offset,
+                'query':searchQuery
+            });
+        }
+        if(typeof categoryPage!="undefined"){
+            load_ajax_posts({
+                'action': 'get_search_results',
+                'offset': offset,
+                'cat':category
+            });
+        }
+        if(typeof tagPage!="undefined"){
+            load_ajax_posts({
+                'action': 'get_search_results',
+                'offset': offset,
+                'tag':tag
+            });
+        }
+        if(typeof datePage!="undefined"){
+            load_ajax_posts({
+                'action': 'get_search_results',
+                'offset': offset,
+                'date':dateArray
             });
         }
     });
