@@ -2778,5 +2778,5 @@ input:focus,select:focus,textarea:focus,button:focus {outline: none;}
     width: 100%;
     height: 2px;
     margin-bottom: 15px;}
-/*.bx-wrapper { visibility: hidden; }*/
+.bx-wrapper { visibility: hidden; }
 

@@ -6,6 +6,7 @@ jQuery(function($){
     var column_count=Math.round(12/(cyclic_div_count-1));
     var active_div=0;
     var categories=[];
+    var activeObjectNumber=1;
     var tags=[];
     var $content = $('#ata_main_content'),
         offset = $('#ata_main_content').find('.grid-item').length,
@@ -109,10 +110,13 @@ jQuery(function($){
 
 
         $('.bxslider').bxSlider({
-            mode: 'fade',
-            captions: true,
-            auto: true,
-            speed:2000
+            mode: ata_data.banner_options.mode,
+            captions: false,
+            auto:  ata_data.banner_options.auto=="true"?true:false,
+            speed:parseInt(ata_data.banner_options.speed),
+            onSliderLoad:function(){
+                $(".bx-wrapper").css({"visibility":"visible"});
+            }
         });
         $(".flltrbtn").click(function (e) {
             e.preventDefault();
@@ -191,6 +195,7 @@ jQuery(function($){
             });
             design.add(imageInstance);
             setTimeout(function(){
+                var count=0;
                 $.each(ata_all_positions,function(k,v){
                     var dotimageInstance= new fabric.Image(document.getElementById('ata_dotImage'), {
                         top: parseInt(v.top)+26,
@@ -209,8 +214,15 @@ jQuery(function($){
                         hasControls:false
                     });
                     design.add(dotimageInstance);
+                    design.renderAll();
+                    count++;
+                    if(v.id==default_region){
+                       // design.getActiveObject().id= v.id;
+                        activeObjectNumber=count;
+                    }
                 });
-            },2000)
+                design.setActiveObject(design.item(activeObjectNumber));
+            },2000);
             design.on({
                 'object:selected': function(opts) {
                      if (typeof opts.target.id != 'undefined') {
@@ -234,6 +246,7 @@ jQuery(function($){
                     }
                 }
             });
+
         }
         //$('.grid').masonry({
         //    itemSelector: '.grid-item'
@@ -430,5 +443,12 @@ $(document).on("change","#ata_regional_contact",function(e){
     $(document).on("click","#ata_back_button",function(e){
         parent.history.back();
         return false;
+    });
+    $(document).on("click",".att-btn a",function(e){
+      var href=$(this).attr("href");
+        if(href.indexOf("http://")<0 && href.indexOf("https://")<0 && href.indexOf("#")>=0){
+            $('html, body').animate({scrollTop:$(href).offset().top}, 'slow');
+            return false;
+        }
     });
 });
