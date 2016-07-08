@@ -107,17 +107,6 @@ jQuery(function($){
                 $(".srch-frm").slideToggle(200);
             }
         });
-
-
-        $('.bxslider').bxSlider({
-            mode: ata_data.banner_options.mode,
-            captions: false,
-            auto:  ata_data.banner_options.auto=="true"?true:false,
-            speed:parseInt(ata_data.banner_options.speed),
-            onSliderLoad:function(){
-                $(".bx-wrapper").css({"visibility":"visible"});
-            }
-        });
         $(".flltrbtn").click(function (e) {
             e.preventDefault();
             $(".oppflt").slideToggle(300);
@@ -166,6 +155,16 @@ jQuery(function($){
         }
     })
     $(window).load(function(){
+        $('.bxslider').bxSlider({
+            mode: ata_data.banner_options.mode,
+            captions: false,
+            auto:  ata_data.banner_options.auto=="true"?true:false,
+            speed:parseInt(ata_data.banner_options.speed),
+            onSliderLoad:function(){
+                $(".bx-wrapper").css({"visibility":"visible"});
+                $(".bxslider").css({"visibility":"visible"});
+            }
+        });
         if(typeof region_map!="undefined"){
             var canvas = $('#ata_region_map').children('canvas').get(0);
             var design = new fabric.Canvas(canvas, {
