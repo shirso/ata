@@ -446,7 +446,7 @@ $(document).on("change","#ata_regional_contact",function(e){
     $(document).on("click",".att-btn a",function(e){
       var href=$(this).attr("href");
         if(href.indexOf("http://")<0 && href.indexOf("https://")<0 && href.indexOf("#")>=0){
-            $('html, body').animate({scrollTop:$(href).offset().top}, 'slow');
+            $('html, body').animate({scrollTop:$(href).offset().top-50}, 'slow');
             return false;
         }
     });

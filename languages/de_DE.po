@@ -1,0 +1,1500 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Ata-Dag v1.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2016-07-27 09:39:11+0000\n"
+"Last-Translator: webmaster <rg@wp-theme.eu>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: 404.php:1
+#@ ata
+msgid "No Result Found"
+msgstr "Keine Ergebnisse gefunden"
+
+#: 404.php:1
+#@ ata
+msgid "The page you requested could not be found. Try refining your search, or use the navigation above to locate the post."
+msgstr "Die angeforderte Seite wurde leider nicht gefunden. Versuchen Sie Ihre Suche zu ändern oder einzugrenzen. Sie können auch die Navigation verwenden, um zum gewünschten ERgebnis zu gelangen. "
+
+#: archive.php:11
+#, php-format
+#@ default
+msgid "Daily Archives: <span>%s</span>"
+msgstr ""
+
+#: archive.php:13
+#, php-format
+#@ default
+msgid "Monthly Archives: <span>%s</span>"
+msgstr ""
+
+#: archive.php:15
+#, php-format
+#@ default
+msgid "Yearly Archives: <span>%s</span>"
+msgstr ""
+
+#: author.php:17
+#@ default
+msgid "Recent Posts by"
+msgstr ""
+
+#: category.php:1
+#, php-format
+#@ ata
+msgid "Category Archives: %s"
+msgstr "Kategorien: %s"
+
+#: header.php:111
+#@ ata
+msgid "Search"
+msgstr "Suchen und finden"
+
+#: includes/customize/class-fonts-customizer.php:1
+#: metaboxes/init.php:259
+#: metaboxes/metabox-management.php:1
+#@ default
+#@ ata
+msgid "Default"
+msgstr "Standard"
+
+#: includes/customize/function-customs.php:1
+#, php-format
+#@ default
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr ""
+
+#: includes/customize/function-customs.php:1
+#, php-format
+#@ default
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: includes/customize/function-customs.php:1
+#@ default
+msgid "(Edit)"
+msgstr ""
+
+#: includes/customize/function-customs.php:1
+#@ default
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: includes/customize/meta-quickedit.php:1
+#@ default
+msgid "Edit this item inline"
+msgstr ""
+
+#: includes/customize/meta-quickedit.php:1
+#@ default
+msgid "Quick&nbsp;Edit"
+msgstr ""
+
+#: includes/customize/theme-customization.php:1
+#@ dsgn
+msgid "Edit All Sidebar Header Text Color"
+msgstr ""
+
+#: includes/customize/theme-customization.php:1
+#@ dsgn
+msgid "Edit Content Text Color"
+msgstr ""
+
+#: includes/customize/theme-customization.php:1
+#@ dsgn
+msgid "Edit Content Header Text Color"
+msgstr ""
+
+#: includes/customize/theme-customization.php:1
+#@ dsgn
+msgid "Edit Text Color Under Banner"
+msgstr ""
+
+#: includes/customize/theme-customization.php:1
+#@ dsgn
+msgid "Edit Sidebar Link Color"
+msgstr ""
+
+#: includes/customize/theme-customization.php:1
+#@ dsgn
+msgid "Edit Sidebar Button Color"
+msgstr ""
+
+#: includes/customize/theme-customization.php:1
+#@ dsgn
+msgid "Edit Button Link Color"
+msgstr ""
+
+#: includes/customize/theme-customization.php:1
+#@ dsgn
+msgid "Edit Navigation Link Color"
+msgstr ""
+
+#: includes/customize/theme-customization.php:1
+#@ dsgn
+msgid "Edit Footer Text Color"
+msgstr ""
+
+#: includes/customize/theme-customization.php:1
+#@ dsgn
+msgid "Edit Content Text Font size"
+msgstr ""
+
+#: includes/customize/theme-customization.php:1
+#@ dsgn
+msgid "Edit Link Font size"
+msgstr ""
+
+#: includes/customize/theme-customization.php:1
+#@ dsgn
+msgid "Edit Sidebar Text Font size"
+msgstr ""
+
+#: includes/customize/theme-customization.php:1
+#@ dsgn
+msgid "Edit Footer Font size"
+msgstr ""
+
+#: includes/customize/theme-customization.php:1
+#@ dsgn
+msgid "Edit Sidebar Header Font size"
+msgstr ""
+
+#: includes/customize/theme-customization.php:1
+#@ dsgn
+msgid "Edit Banner Lower Font size"
+msgstr ""
+
+#: includes/customize/theme-customization.php:1
+#@ dsgn
+msgid "Edit All Link Text Color"
+msgstr ""
+
+#: includes/customize/theme-customization.php:1
+#@ dsgn
+msgid "Edit All Sidebar Text Color"
+msgstr ""
+
+#: includes/sidebar-init.php:1
+#@ ata
+msgid "Footer Sidebar 1"
+msgstr ""
+
+#: includes/sidebar-init.php:1
+#@ ata
+msgid "Located in the top right of footer section"
+msgstr "Befindet sich oben rechts im Footer"
+
+#: includes/sidebar-init.php:1
+#@ ata
+msgid "Footer Sidebar 2"
+msgstr ""
+
+#: includes/sidebar-init.php:1
+#@ ata
+msgid "Located in the top left of footer section"
+msgstr "Befindet sich oben links im Footer"
+
+#: includes/sidebar-init.php:1
+#@ ata
+msgid "Footer Sidebar 3"
+msgstr ""
+
+#: includes/sidebar-init.php:1
+#@ ata
+msgid "Located in the bottom left of footer section"
+msgstr "Befindet suchh unten links im Footer"
+
+#: includes/sidebar-init.php:1
+#@ ata
+msgid "Blog Single Page Sidebar"
+msgstr ""
+
+#: includes/sidebar-init.php:1
+#@ ata
+msgid "Located in the right side of blog single page"
+msgstr "Befindet sich rechts auf den Beiträge-Seiten"
+
+#: includes/theme-function.php:1
+#@ default
+msgid "Thumbnail"
+msgstr ""
+
+#: includes/theme-function.php:1
+#@ default
+msgid "None"
+msgstr ""
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "Category"
+msgstr "Kategorie"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "Search Categories"
+msgstr "Kategorien (durch)suchen"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "Parent Category"
+msgstr ""
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "Parent Category:"
+msgstr "\\\"Eltern\\\"-Kategorie"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "Edit Category"
+msgstr "Kategorie bearbeiten"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "Update Category"
+msgstr "Kategorie aktualisieren"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "Add New Category"
+msgstr "Neue Kategorie einfügen"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "New Category Name"
+msgstr "Neuer Kategorie-Name"
+
+#: category.php:1
+#: date.php:21
+#: includes/theme-ajax.php:1
+#: includes/theme-scripts.php:1
+#: includes/theme_shortcodes/shortcodes.php:1
+#: page-blog.php:1
+#: search.php:1
+#: tag.php:1
+#@ ata
+msgid "More"
+msgstr "Mehr"
+
+#: includes/theme_shortcodes/tinymce/dialog.php:20
+#: includes/theme_shortcodes/tinymce/tinymce-shortcodes.php:89
+#@ ata
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: includes/theme_shortcodes/tinymce/dialog.php:21
+#: includes/theme_shortcodes/tinymce/tinymce-shortcodes.php:90
+#@ ata
+msgid "Insert"
+msgstr "Einfügen"
+
+#: includes/theme_shortcodes/tinymce/dialog.php:25
+#: includes/theme_shortcodes/tinymce/tinymce-shortcodes.php:94
+#@ ata
+msgid "Shortcode Options"
+msgstr "Shortcode-Einstellungen"
+
+#: includes/widgets/partner-widget.php:4
+#@ ata
+msgid "Partner Widget"
+msgstr ""
+
+#: includes/widgets/partner-widget.php:30
+#@ shubh
+msgid "Title:"
+msgstr ""
+
+#: metaboxes/custom_metaboxes.php:1
+#@ ata
+msgid "Region Points"
+msgstr ""
+
+#: metaboxes/custom_metaboxes.php:1
+#@ ata
+msgid "Format"
+msgstr ""
+
+#: metaboxes/custom_metaboxes.php:1
+#@ ata
+msgid "Full Background Image"
+msgstr ""
+
+#: metaboxes/custom_metaboxes.php:1
+#@ ata
+msgid "Half Background Image"
+msgstr ""
+
+#: metaboxes/custom_metaboxes.php:1
+#@ ata
+msgid "Move pin on appropriate position"
+msgstr "Bewegen Sie den Stift zu entsprechender/gewünschter Position"
+
+#: metaboxes/helpers/cmb_Meta_Box_ajax.php:47
+#@ cmb
+msgid "Please Try Again"
+msgstr ""
+
+#: metaboxes/helpers/cmb_Meta_Box_ajax.php:131
+#@ cmb
+msgid "Remove Embed"
+msgstr ""
+
+#: metaboxes/helpers/cmb_Meta_Box_ajax.php:134
+#, php-format
+#@ cmb
+msgid "No oEmbed Results Found for %s. View more info at"
+msgstr ""
+
+#: metaboxes/helpers/cmb_Meta_Box_field.php:459
+#@ cmb
+msgid "Add Group"
+msgstr ""
+
+#: metaboxes/helpers/cmb_Meta_Box_field.php:460
+#@ cmb
+msgid "Remove Group"
+msgstr ""
+
+#: metaboxes/helpers/cmb_Meta_Box_types.php:250
+#@ cmb
+msgid "Add Row"
+msgstr ""
+
+#: metaboxes/helpers/cmb_Meta_Box_types.php:306
+#: metaboxes/helpers/cmb_Meta_Box_types.php:706
+#: metaboxes/helpers/cmb_Meta_Box_types.php:768
+#@ cmb
+msgid "Remove"
+msgstr ""
+
+#: metaboxes/helpers/cmb_Meta_Box_types.php:601
+#: metaboxes/helpers/cmb_Meta_Box_types.php:635
+#@ cmb
+msgid "No terms"
+msgstr ""
+
+#: metaboxes/helpers/cmb_Meta_Box_types.php:674
+#: metaboxes/helpers/cmb_Meta_Box_types.php:728
+#@ cmb
+msgid "Add or Upload File"
+msgstr ""
+
+#: metaboxes/helpers/cmb_Meta_Box_types.php:695
+#: metaboxes/helpers/cmb_Meta_Box_types.php:760
+#@ cmb
+msgid "Remove Image"
+msgstr ""
+
+#: metaboxes/helpers/cmb_Meta_Box_types.php:706
+#: metaboxes/helpers/cmb_Meta_Box_types.php:768
+#@ cmb
+msgid "File:"
+msgstr ""
+
+#: metaboxes/helpers/cmb_Meta_Box_types.php:706
+#: metaboxes/helpers/cmb_Meta_Box_types.php:768
+#@ cmb
+msgid "Download"
+msgstr ""
+
+#: metaboxes/init.php:258
+#@ default
+msgid "Clear"
+msgstr ""
+
+#: metaboxes/init.php:260
+#@ default
+msgid "Select Color"
+msgstr ""
+
+#: metaboxes/init.php:261
+#@ default
+msgid "Current Color"
+msgstr ""
+
+#: metaboxes/init.php:288
+#@ cmb
+msgid "Select / Deselect All"
+msgstr ""
+
+#: metaboxes/init.php:1177
+#@ default
+msgid "Save"
+msgstr ""
+
+#: metaboxes/metabox-management.php:1
+#@ ata
+msgid "Carousel Buttons"
+msgstr "Button im Slider-Karusell"
+
+#: metaboxes/metabox-management.php:1
+#@ ata
+msgid "Button Heading"
+msgstr ""
+
+#: metaboxes/metabox-management.php:1
+#@ ata
+msgid "Heading above Button"
+msgstr ""
+
+#: metaboxes/metabox-management.php:1
+#@ ata
+msgid "Button Text"
+msgstr ""
+
+#: metaboxes/metabox-management.php:1
+#@ ata
+msgid "Text Display on Carousel Button"
+msgstr "Text im Button im Slider (Karusell)"
+
+#: metaboxes/metabox-management.php:1
+#@ ata
+msgid "Button Sub Heading"
+msgstr "Text im Button unterhalb von Haupttext (Untertitel)"
+
+#: metaboxes/metabox-management.php:1
+#@ ata
+msgid "Small Text Display under Carousel Text"
+msgstr "Kleiner Text unter Slider (Karusell) Text"
+
+#: metaboxes/metabox-management.php:1
+#@ ata
+msgid "Small Text"
+msgstr "Kleiner Text"
+
+#: metaboxes/metabox-management.php:1
+#@ ata
+msgid "Small Text beside Date above Heading"
+msgstr ""
+
+#: page-blog.php:1
+#@ ata
+msgid "Filter"
+msgstr ""
+
+#: page-blog.php:1
+#@ ata
+msgid "Categories"
+msgstr "Kategorien"
+
+#: page-blog.php:1
+#@ ata
+msgid "Tags"
+msgstr "Schlagwörter"
+
+#: includes/theme-ajax.php:1
+#@ ata
+msgid "New"
+msgstr "Neu"
+
+#: plugin/activate-plugins.php:136
+#: plugin/class-tgm-plugin-activation.php:1
+#@ ata
+#@ tgmpa
+msgid "Install Required Plugins"
+msgstr "Die erforderlichen Plug-Ins installieren"
+
+#: plugin/activate-plugins.php:137
+#: plugin/class-tgm-plugin-activation.php:1
+#@ ata
+#@ tgmpa
+msgid "Install Plugins"
+msgstr "Installiere Plug-ins"
+
+#: plugin/activate-plugins.php:138
+#: plugin/class-tgm-plugin-activation.php:1
+#, php-format
+#@ ata
+#@ tgmpa
+msgid "Installing Plugin: %s"
+msgstr "Installiert Plug-In: %s"
+
+#: plugin/activate-plugins.php:139
+#@ ata
+msgid "Something went wrong with the plugin API."
+msgstr "Irgendetwas ging schief mit Plug-In API."
+
+#: plugin/activate-plugins.php:140
+#: plugin/class-tgm-plugin-activation.php:1
+#, php-format
+#@ ata
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: plugin/activate-plugins.php:141
+#: plugin/class-tgm-plugin-activation.php:1
+#, php-format
+#@ ata
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: plugin/activate-plugins.php:142
+#: plugin/class-tgm-plugin-activation.php:1
+#, php-format
+#@ ata
+msgid "Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed."
+msgid_plural "Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: plugin/activate-plugins.php:143
+#: plugin/class-tgm-plugin-activation.php:1
+#, php-format
+#@ ata
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: plugin/activate-plugins.php:144
+#: plugin/class-tgm-plugin-activation.php:1
+#, php-format
+#@ ata
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: plugin/activate-plugins.php:145
+#: plugin/class-tgm-plugin-activation.php:1
+#, php-format
+#@ ata
+msgid "Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated."
+msgid_plural "Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: plugin/activate-plugins.php:146
+#: plugin/class-tgm-plugin-activation.php:1
+#, php-format
+#@ ata
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: plugin/activate-plugins.php:147
+#: plugin/class-tgm-plugin-activation.php:1
+#, php-format
+#@ ata
+msgid "Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated."
+msgid_plural "Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: plugin/activate-plugins.php:148
+#: plugin/class-tgm-plugin-activation.php:1
+#@ ata
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: plugin/activate-plugins.php:149
+#: plugin/class-tgm-plugin-activation.php:1
+#@ ata
+msgid "Activate installed plugin"
+msgid_plural "Activate installed plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: plugin/activate-plugins.php:150
+#: plugin/class-tgm-plugin-activation.php:1
+#@ ata
+#@ tgmpa
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: plugin/activate-plugins.php:151
+#: plugin/class-tgm-plugin-activation.php:1
+#@ ata
+#@ tgmpa
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: plugin/activate-plugins.php:152
+#, php-format
+#@ ata
+msgid "All plugins installed and activated successfully. %s"
+msgstr "Alle Plug-Ins wurden erfolgreich installiert und aktiviert: %s"
+
+#: plugin/class-tgm-plugin-activation.php:1
+#@ tgmpa
+msgid "Something went wrong."
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#@ tgmpa
+msgid "Return to the dashboard"
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#, php-format
+#@ tgmpa
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#@ tgmpa
+msgid "Dismiss this notice"
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#@ tgmpa
+msgid "External Link"
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#@ tgmpa
+msgid "Private Repository"
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#@ tgmpa
+msgid "Pre-Packaged"
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#@ tgmpa
+msgid "WordPress Repository"
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#@ tgmpa
+msgid "Required"
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#@ tgmpa
+msgid "Recommended"
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#@ tgmpa
+msgid "Not Installed"
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#@ tgmpa
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#, php-format
+#@ tgmpa
+msgid "No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#@ tgmpa
+msgid "Plugin"
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#@ tgmpa
+msgid "Source"
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#@ tgmpa
+msgid "Type"
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#@ tgmpa
+msgid "Status"
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#@ tgmpa
+msgid "Install"
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#@ tgmpa
+msgid "Activate"
+msgstr ""
+
+#. gettext fix: identical singular and plural forms found, that may be ambiguous! Please check the code!
+#: plugin/class-tgm-plugin-activation.php:1
+#@ tgmpa
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#@ tgmpa
+msgid "Install package not available."
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#, php-format
+#@ tgmpa
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#@ tgmpa
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#@ tgmpa
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#@ tgmpa
+msgid "Plugin install failed."
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#@ tgmpa
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#@ tgmpa
+msgid "Plugin activation failed."
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#@ tgmpa
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#, php-format
+#@ tgmpa
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#@ tgmpa
+msgid "Show Details"
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#@ tgmpa
+msgid "Hide Details"
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#@ tgmpa
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#, php-format
+#@ tgmpa
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#@ tgmpa
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#, php-format
+#@ tgmpa
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#, php-format
+#@ tgmpa
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#, php-format
+#@ tgmpa
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#@ tgmpa
+msgid "All installations have been completed."
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#, php-format
+#@ tgmpa
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: plugin/class-tgm-plugin-activation.php:1
+#@ tgmpa
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: single.php:1
+#@ ata
+msgid "Back"
+msgstr "Zurück"
+
+#: tag.php:1
+#, php-format
+#@ ata
+msgid "Tag Archives: %s"
+msgstr "Tags: %s"
+
+#: theme-options/admin-options.php:1
+#@ ata
+msgid "Home Page Logo"
+msgstr "Logo für die Startseite"
+
+#: theme-options/admin-options.php:1
+#@ ata
+msgid "Upload your logo image which will display only on homepage"
+msgstr "Laden Sie Ihr Logo-Bild hoch, das nur auf der Startseite angezeigt wird. "
+
+#: theme-options/admin-options.php:1
+#@ ata
+msgid "Inner Page Logo"
+msgstr ""
+
+#: theme-options/admin-options.php:1
+#@ ata
+msgid "Upload your logo image which will display on all inner page"
+msgstr ""
+
+#: theme-options/admin-options.php:1
+#@ ata
+msgid "FavIcon"
+msgstr ""
+
+#: theme-options/admin-options.php:1
+#@ ata
+msgid "Upload your favicon image"
+msgstr "Laden Sie Ihr Bild für Favicon"
+
+#: theme-options/admin-options.php:1
+#@ ata
+msgid "Region Map"
+msgstr ""
+
+#: theme-options/admin-options.php:1
+#@ ata
+msgid "Upload Region Map Image"
+msgstr ""
+
+#: theme-options/admin-options.php:1
+#@ ata
+msgid "Facebook Page URL"
+msgstr ""
+
+#: theme-options/admin-options.php:1
+#@ ata
+msgid "Put URL with http://"
+msgstr ""
+
+#: theme-options/admin-options.php:1
+#@ ata
+msgid "Language Text"
+msgstr ""
+
+#: theme-options/admin-options.php:1
+#@ ata
+msgid "Put language display text which will show on menu"
+msgstr ""
+
+#: theme-options/admin-options.php:1
+#@ ata
+msgid "Language URL"
+msgstr ""
+
+#: theme-options/admin-options.php:1
+#@ ata
+msgid "Put language URL with http://"
+msgstr ""
+
+#: theme-options/admin-options.php:1
+#@ ata
+msgid "Carousel Button Info Text"
+msgstr ""
+
+#: theme-options/admin-options.php:1
+#@ ata
+msgid "Info Text above Carousel Buttons"
+msgstr ""
+
+#: theme-options/admin-options.php:1
+#@ ata
+msgid "No of Days Interval for New Post"
+msgstr ""
+
+#: theme-options/admin-options.php:1
+#@ ata
+msgid "No of days for Post as appear NEW"
+msgstr ""
+
+#: theme-options/admin-options.php:1
+#@ ata
+msgid "Custom CSS"
+msgstr ""
+
+#: theme-options/admin-options.php:1
+#@ ata
+msgid "Want to add any custom CSS code? Put in here, and the rest is taken care of. This overrides any other stylesheets. eg: a.button{color:green}"
+msgstr ""
+
+#: theme-options/admin-options.php:1
+#@ ata
+msgid "Banner"
+msgstr "Banner (Slider für Startseite)"
+
+#: theme-options/admin-options.php:1
+#@ ata
+msgid "Transaction Mode"
+msgstr ""
+
+#: theme-options/admin-options.php:1
+#@ ata
+msgid "Type of transition between slides"
+msgstr ""
+
+#: theme-options/admin-options.php:1
+#@ ata
+msgid "Speed"
+msgstr "Geschwindigkeit"
+
+#: theme-options/admin-options.php:1
+#@ ata
+msgid "Slide transition duration (in ms)"
+msgstr ""
+
+#: theme-options/admin-options.php:1
+#@ ata
+msgid "Auto"
+msgstr ""
+
+#: theme-options/admin-options.php:1
+#@ ata
+msgid "Slides will automatically transition"
+msgstr ""
+
+#: theme-options/admin-options.php:1
+#@ ata
+msgid "Footer"
+msgstr ""
+
+#: theme-options/admin-options.php:1
+#@ ata
+msgid "Footer copyright text"
+msgstr ""
+
+#: theme-options/admin-options.php:1
+#@ ata
+msgid "Enter text used in the right side of the footer. It can be HTML"
+msgstr ""
+
+#: theme-options/admin-options.php:1
+#@ ata
+msgid "Google Analytics Code"
+msgstr ""
+
+#: theme-options/admin-options.php:1
+#@ ata
+msgid "You can paste your Google Analytics or other tracking code in this box. This will be automatically added to the footer."
+msgstr ""
+
+#: date.php:8
+#, php-format
+#@ ata
+msgid "Date Archives: %s"
+msgstr ""
+
+#: includes/theme-init.php:1
+#@ ata
+msgctxt "post type general name"
+msgid "Regions"
+msgstr "Regionen"
+
+#: includes/theme-init.php:1
+#@ ata
+msgctxt "post type singular name"
+msgid "Region"
+msgstr ""
+
+#: includes/theme-init.php:1
+#@ ata
+msgctxt "admin menu"
+msgid "Regions"
+msgstr "Regionen"
+
+#: includes/theme-init.php:1
+#@ ata
+msgctxt "add new on admin bar"
+msgid "Region"
+msgstr ""
+
+#: includes/theme-init.php:1
+#@ ata
+msgctxt "Region"
+msgid "Add New"
+msgstr "Neu hinzufügen"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "Add New Region"
+msgstr "Neue Region hinzufüügen"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "New Region"
+msgstr "Neue Region"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "Edit Region"
+msgstr "Region bearbeiten"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "View Region"
+msgstr "Region ansehen"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "All Regions"
+msgstr "Alle Regionen"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "Search Regions"
+msgstr "Regionen suchen"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "Parent Regions:"
+msgstr "\\\"Eltern\\\"-Region"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "No Regions found."
+msgstr "Keine Regionen gefunden."
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "No Regions found in Trash."
+msgstr "Keine Regionen im Papierkorb gefunden."
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "Region Data display on Map"
+msgstr ""
+
+#: includes/theme-init.php:1
+#@ ata
+msgctxt "post type general name"
+msgid "Societies"
+msgstr "Mitarbeiter"
+
+#: includes/theme-init.php:1
+#@ ata
+msgctxt "post type singular name"
+msgid "Society"
+msgstr "Mitarbeiter"
+
+#: includes/theme-init.php:1
+#@ ata
+msgctxt "admin menu"
+msgid "Societies"
+msgstr "Mitarbeiter"
+
+#: includes/theme-init.php:1
+#@ ata
+msgctxt "add new on admin bar"
+msgid "Society"
+msgstr "Mitarbeiter"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "Add New Society"
+msgstr "Neuen Mitarbeiter hinzufügen"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "New Society"
+msgstr "Neuer Mitarbeiter"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "Edit Society"
+msgstr "Mitarbeiter bearbeiten"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "View Society"
+msgstr "Mitarbeiter ansehen"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "All Societies"
+msgstr "Alle Mitarbeiter"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "Search Societies"
+msgstr "MItarbeiter suchen"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "Parent Societies:"
+msgstr "\\\"Eltern\\\"-Mitarbeiter"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "No Societies found."
+msgstr "Keine Mitarbeiter gefunden."
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "No Societies found in Trash."
+msgstr "Keine Mitarbeiter im Papierkorb gefunden."
+
+#: includes/theme-init.php:1
+#@ ata
+msgctxt "taxonomy general name"
+msgid "Categories"
+msgstr "Kategorien"
+
+#: includes/theme-init.php:1
+#@ ata
+msgctxt "taxonomy singular name"
+msgid "Category"
+msgstr "Kategorien"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "All Categories"
+msgstr "Alle Kategorien"
+
+#: includes/theme-init.php:1
+#@ ata
+msgctxt "post type general name"
+msgid "Regional Forums"
+msgstr ""
+
+#: includes/theme-init.php:1
+#@ ata
+msgctxt "post type singular name"
+msgid "Regional Forum"
+msgstr ""
+
+#: includes/theme-init.php:1
+#@ ata
+msgctxt "admin menu"
+msgid "Regional Forums"
+msgstr ""
+
+#: includes/theme-init.php:1
+#@ ata
+msgctxt "add new on admin bar"
+msgid "Regional Forum"
+msgstr ""
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "Add New Regional Forum"
+msgstr ""
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "New Regional Forum"
+msgstr ""
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "Edit Regional Forum"
+msgstr ""
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "View Regional Forum"
+msgstr ""
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "All Regional Forum"
+msgstr ""
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "Search Regional Forums"
+msgstr ""
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "Parent Regional Forums:"
+msgstr ""
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "No Regional Forums found."
+msgstr ""
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "No Regional Forums found in Trash."
+msgstr ""
+
+#: includes/theme-init.php:1
+#@ ata
+msgctxt "post type general name"
+msgid "Partners"
+msgstr ""
+
+#: includes/theme-init.php:1
+#@ ata
+msgctxt "post type singular name"
+msgid "Partner"
+msgstr ""
+
+#: includes/theme-init.php:1
+#@ ata
+msgctxt "admin menu"
+msgid "Partners"
+msgstr ""
+
+#: includes/theme-init.php:1
+#@ ata
+msgctxt "add new on admin bar"
+msgid "Partner"
+msgstr ""
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "Add New Partner"
+msgstr "Neuen Partner hinzufügen"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "New Partner"
+msgstr "Neuer Partner"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "Edit Partner"
+msgstr "Partner bearbeiten"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "View Partner"
+msgstr "Partner ansehen"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "All Partners"
+msgstr "Alle Partners"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "Search Partners"
+msgstr "Partner suchen"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "Parent Partners:"
+msgstr ""
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "No Partners found."
+msgstr "Keine Partners gefunden."
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "No Partners found in Trash."
+msgstr "Keine Partners im Papierkorb gefunden."
+
+#: includes/theme-init.php:1
+#@ ata
+msgctxt "post type general name"
+msgid "Banners"
+msgstr ""
+
+#: includes/theme-init.php:1
+#@ ata
+msgctxt "post type singular name"
+msgid "Banner"
+msgstr ""
+
+#: includes/theme-init.php:1
+#@ ata
+msgctxt "admin menu"
+msgid "Banners"
+msgstr "Banner (Slider für Startseite)"
+
+#: includes/theme-init.php:1
+#@ ata
+msgctxt "add new on admin bar"
+msgid "Banner"
+msgstr ""
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "Add New Banner"
+msgstr "Neues Banner hinzufügen"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "New Banner"
+msgstr "Neues Banner (Sliderbild für Startseite)"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "Edit Banner"
+msgstr "Banner bearbeiten"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "View Banner"
+msgstr "Banner ansehen"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "All Banners"
+msgstr "Alle Banner (Sliderbilder)"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "Search Banners"
+msgstr "Banner sucher"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "Parent Banners:"
+msgstr ""
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "No Banners found."
+msgstr "Keine Banners gefunden."
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "No Banners found in Trash."
+msgstr "Keine Banners im Papierkorb gefunden."
+
+#: includes/theme-init.php:1
+#@ ata
+msgctxt "post type general name"
+msgid "Slider / Carousel"
+msgstr ""
+
+#: includes/theme-init.php:1
+#@ ata
+msgctxt "post type singular name"
+msgid "Slider / Carousel"
+msgstr ""
+
+#: includes/theme-init.php:1
+#@ ata
+msgctxt "admin menu"
+msgid "Slider / Carousel"
+msgstr ""
+
+#: includes/theme-init.php:1
+#@ ata
+msgctxt "add new on admin bar"
+msgid "Slider / Carousel"
+msgstr ""
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "Add New Slider"
+msgstr "Neuen Slider hinzufügen"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "New Slider"
+msgstr "Neuer Slider"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "Edit Slider"
+msgstr "Slider bearbeiten"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "View Slider"
+msgstr "Slider ansehen"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "All Sliders"
+msgstr "Alle Sliders"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "Search Sliders"
+msgstr "Slider suchen"
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "Parent Sliders:"
+msgstr ""
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "No Sliders found."
+msgstr "Keine Slider gefunden."
+
+#: includes/theme-init.php:1
+#@ ata
+msgid "No Sliders found in Trash."
+msgstr "Keine Slider im Papierkorb gefunden."
+
+#: metaboxes/custom_metaboxes.php:1
+#@ ata
+msgid "No Image Grey Background"
+msgstr "Kein Bild, grauer Hintergrund."
+
+#: metaboxes/custom_metaboxes.php:1
+#@ ata
+msgid "No Image Blue Background"
+msgstr "Kein Bild, blauer Hintergrund."
+
+#: metaboxes/custom_metaboxes.php:1
+#@ ata
+msgid "Full Image with No Gap"
+msgstr ""
+
+#: metaboxes/metabox-management.php:1
+#@ ata
+msgid "Make This as Default"
+msgstr "Das ist Standard (erscheint zuerst, beim Seitenladen)."
+
+#: search.php:1
+#@ ata
+msgid "Search results for"
+msgstr "Suche Ergebnisse für"
+
+#: search.php:1
+#@ ata
+msgid "oops! There is Nothing Matched for You"
+msgstr "Leider nicht für Sie gefunden."
+

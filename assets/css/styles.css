@@ -444,7 +444,7 @@ p {
 }
 /* line 193, ../sass/_normalize.scss */
 .pg_header .srch-frm .btn, .pg_header_2 .srch-frm .btn {
-  background-color: #337db1;
+  background-color: #335b77;
   color: #fff;
 }
 /* line 195, ../sass/_normalize.scss */
@@ -771,7 +771,7 @@ p {
   background: #fff;
   display: block;
   padding: 8px 20px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 /* line 341, ../sass/_normalize.scss */
 .bdy-grec .alstex h3 {
@@ -1376,7 +1376,7 @@ hr.bdr2 {
 }
 /* line 602, ../sass/_normalize.scss */
 .bdy-gra-msec .ftwthsec {
-  width: 300px;
+  width: 308px;
   margin: auto;
   display: block;
   text-align: center;
@@ -2588,7 +2588,7 @@ position:absolute;
   display: none;
 }
 
-.bdy2-m-sec p a{color:#022f84;}
+.bdy2-m-sec p a{color:#b4c1da;}
 .bdy2-m-sec p a:hover{color:#6f88b7;}
 .not_found_p{ text-align:center; margin-bottom:100px!important;}
 
@@ -2600,6 +2600,7 @@ position:absolute;
   position: relative;
     padding-left: 5px; 
 	font-size:14px;
+	color:#fff;
 	}
 .checkbox label::before {
   content: "";
@@ -2750,6 +2751,8 @@ a, a:visited, a:focus, a:active, a:hover{
 }
 input:focus,select:focus,textarea:focus,button:focus {outline: none;}
 .ext-btn>a{position:relative;}
+.flric {margin-left:8px;}
+.flric a{cursor: pointer;}
 .post_loading_loader:before{
 	color:#000;
 	position:absolute;
@@ -2779,4 +2782,12 @@ input:focus,select:focus,textarea:focus,button:focus {outline: none;}
     height: 2px;
     margin-bottom: 15px;}
 .bx-wrapper,.bxslider { visibility: hidden; }
+.bdy-grec h6{
+	background: #fff;
+    margin: -14px 15px 26px 15px;
+    padding: 10px 0 0 0;
+    font-size: 24px;
+    font-weight: 700;}
+G
+
 

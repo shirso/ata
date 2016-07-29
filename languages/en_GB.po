@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Ata-Dag\n"
-"POT-Creation-Date: 2016-07-08 09:31+0530\n"
-"PO-Revision-Date: 2016-07-08 09:31+0530\n"
+"POT-Creation-Date: 2016-07-29 20:09+0530\n"
+"PO-Revision-Date: 2016-07-29 20:10+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_GB\n"
@@ -488,6 +488,10 @@ msgstr "No Sliders found."
 msgid "No Sliders found in Trash."
 msgstr "No Sliders found in Trash."
 
+#: includes/theme-scripts.php:1
+msgid "Less"
+msgstr "Less"
+
 #: includes/theme_shortcodes/tinymce/dialog.php:20
 #: includes/theme_shortcodes/tinymce/tinymce-shortcodes.php:89
 msgid "Cancel"
@@ -662,10 +666,6 @@ msgstr "Make This as Default"
 #: page-blog.php:1
 msgid "Filter"
 msgstr "Filter"
-
-#: page-blog.php:1
-msgid "Categories"
-msgstr "Categories"
 
 #: page-blog.php:1
 msgid "Tags"
@@ -847,3 +847,6 @@ msgstr ""
 #. Author of the plugin/theme
 msgid "WP-THEME.EU"
 msgstr ""
+
+#~ msgid "Categories"
+#~ msgstr "Categories"
